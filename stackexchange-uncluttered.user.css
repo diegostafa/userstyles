@@ -1,0 +1,43 @@
+/* ==UserStyle==
+@name           stackexchange-uncluttered
+@namespace      github.com/diegostafa/userstyles
+@version        1.0.0
+@description    Unclutters the stackexchange UI
+@author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
+==/UserStyle== */
+
+@-moz-document url-prefix("https://stackoverflow.com/"), url-prefix("https://superuser.com/"), url-prefix("https://askubuntu.com/"), regexp("https://.*\\.stackexchange\\.com/.*") {
+    header,
+    footer,
+    #left-sidebar,
+    #post-form,
+    #sidebar,
+    #question-header div,
+    .bottom-notice,
+    .flex--item.mr16,
+    #announcement-banner,
+    .js-dismissable-hero {
+        display: none !important;
+    }
+
+
+    body {
+        padding: 0 !important;
+        margin: 0 !important;
+        background: none !important;
+        background-color: black !important;
+    }
+
+    #content {
+        margin: 0 auto !important;
+        border: none !important;
+        width: 100% !important;
+    }
+
+    #mainbar {
+        border: 1px solid #6a6a6a;
+        padding: 10px !important;
+        margin: auto !important;
+        width: 100%;
+    }
+}

@@ -1,0 +1,29 @@
+/* ==UserStyle==
+@name           simple-scrollbar
+@namespace      github.com/diegostafa/userstyles
+@version        1.0.0
+@description    Reduces the scrollbar width
+@author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
+==/UserStyle== */
+
+::-webkit-scrollbar {
+    width: 8px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border: 0 solid transparent;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0 solid transparent;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}

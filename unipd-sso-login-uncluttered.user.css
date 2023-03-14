@@ -1,0 +1,24 @@
+/* ==UserStyle==
+@name           unipd-sso-login-uncluttered
+@namespace      github.com/diegostafa/userstyles
+@version        1.0.0
+@description    Unclutters the unipd sso login page
+@author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
+==/UserStyle== */
+
+@-moz-document domain("shibidp.cca.unipd.it") {
+    body {
+        background: none !important;
+    }
+
+    .container{
+        margin-top: 8vh !important;
+    }
+
+    .row.vertical-align img,
+    .lingue,
+    .col-xs-12 > .row,
+    footer {
+        display: none;
+    }
+}

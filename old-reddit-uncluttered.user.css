@@ -1,0 +1,25 @@
+/* ==UserStyle==
+@name           old-reddit-uncluttered
+@namespace      github.com/diegostafa/userstyles
+@version        1.0.0
+@description    Unclutters the old.reddit UI
+@author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
+==/UserStyle== */
+
+@-moz-document regexp("https?://old\\.reddit\\.com/.*") {
+    .side,
+    .infobar.listingsignupbar,
+    .footer-parent,
+    .usertext.cloneable,
+    .flat-list.buttons,
+    .midcol,
+    #header {
+        display: none !important;
+    }
+
+    .comment {
+        border: 1px solid #808080;
+        margin: 4px;
+        padding: 4px;
+    }
+}

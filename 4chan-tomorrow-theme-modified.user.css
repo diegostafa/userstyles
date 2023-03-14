@@ -1,0 +1,492 @@
+/* ==UserStyle==
+@name           4chan-tomorrow-theme-modified
+@namespace      github.com/diegostafa/userstyles
+@version        1.0.0
+@description    Unclutters the 4chan tomorrow theme
+@author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
+==/UserStyle== */
+@-moz-document regexp("https?://boards\\.4chan(nel)?\\.org/.*") {
+
+    /*
+        todo: use variables
+    */
+
+    * {
+        filter: none !important;
+    }
+
+    body,
+    html {
+        background-color: #1d2021 !important;
+        padding: 0 1% !important;
+    }
+
+    a:link,
+    a:visited {
+        color: #458588 !important;
+    }
+
+    a:hover,
+    a:active {
+        color: #458588 !important;
+    }
+
+
+    input:focus,
+    input:active {
+        outline: none !important;
+    }
+
+    #js-snowfield,
+    .sideArrows,
+    #boardNavDesktopFoot,
+    #toggleMsgBtn,
+    #bannerCnt,
+    #globalMessage,
+    #blotter,
+    #styleSwitcher,
+    #globalToggle,
+    .middlead.center,
+    .abovePostForm,
+    .aboveMidAd,
+    hr,
+    #absbot,
+    .navLinks.navLinksBot.desktop .thread-stats,
+    .ctrl-wrap,
+    .postInfo.desktop input[type=checkbox],
+    .adc-resp-bg,
+    .navLinks.navLinksBottom.mobilebtn,
+    #t-help,
+    tr.rules,
+    div.passNotice,
+    #postForm > tbody > tr[data-type=Name],
+    #postForm > tbody > tr[data-type=Options],
+    img.party-hat, .adl, .postInfoM.mobile, .boardBanner {
+        display: none !important;
+    }
+
+
+    /* new post*/
+    #postForm {
+        background-color: #1d2021 !important;
+        padding: 0 !important;
+        border: 2px dashed #4b4b4b !important;
+    }
+
+    #postForm tbody tr td {
+        text-align: center !important;
+        background-color: #282828 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+    }
+
+    #postForm tbody tr[data-type=Subject] td {
+        width: 100% !important;
+    }
+
+    #postForm tbody tr[data-type=Subject] td:nth-child(2) {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    #postForm tbody tr[data-type=Subject] td input[type=text] {
+        background-color: #282828 !important;
+        color: white !important;
+        border: none !important;
+        width: 80% !important;
+    }
+    #postForm tbody tr[data-type=Subject] td input[type=submit] {
+        width: 20%;
+        border: none !important;
+        color: #c5c8c6 !important;
+        background-color: #1d2021 !important;
+        font-size: 11px !important;
+        font-family: 'liberation mono' !important;
+    }
+
+    #postForm tbody tr td textarea {
+        color: white !important;
+        text-align: left;
+        border: none !important;
+        background-color: #282828 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        min-width: 360px!important;
+        min-height: 100px!important;
+        -webkit-box-sizing: content-box !important;
+    }
+
+
+    #t-root {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        min-height: fit-content !important;
+        background-color: #1d2021!important;
+        border: none !important;
+    }
+
+    #postFile {
+        width: 100% !important;
+        font-size: 11px !important;
+        font-family: 'liberation mono';
+    }
+
+
+    /* catalog */
+    #content {
+        color: #dfdfdf !important;
+        width: 100% !important;
+    }
+
+    #content #threads {
+        border: 2px dashed #4b4b4b !important;
+        background-color: #282828 !important;
+        padding: 20px 0 !important;
+        display: flex !important;
+        justify-content: space-evenly !important;
+        flex-wrap: wrap;
+        margin: 0 !important;
+    }
+
+
+    /* header */
+    .boardBanner {
+        margin: 80px 0 !important;
+    }
+
+    .boardTitle {
+        color: #c8c8c8 !important;
+        font-family: 'liberation mono' !important;
+        font-weight: 200 !important;
+    }
+
+    #togglePostFormLink a {
+        color: #458588 !important;
+        font-weight: 400 !important;
+    }
+
+    /* nav links*/
+    .navLinks.desktop,
+    #ctrl {
+        margin: 20px 0 !important;
+    }
+
+    .navLinks.navLinksBot.desktop {
+        text-align: center !important;
+        margin: 0 auto !important;
+    }
+
+
+    /* thread watcher */
+    #threadWatcher {
+        margin: 0 !important;
+        padding: 0 !important;
+        border: 2px solid #458588 !important;
+        background-color: #282828 !important;
+    }
+
+    #twHeader {
+        font-size: 12px !important;
+        text-align: center   !important;
+    }
+
+
+
+    #watchList li {
+        border: none !important;
+    }
+
+
+    /* OP */
+    .postContainer.opContainer {
+        color: #dfdfdf !important;
+        display: block !important;
+        background-color: #1d2021 !important;
+        border: 2px dashed #4b4b4b !important;
+        padding: 15px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .postContainer.opContainer .fileText {
+        width: 100% !important;
+        font-size: 12px !important;
+        margin: 0 !important;
+    }
+
+    .postContainer.opContainer .fileThumb {
+        margin-top: 15px !important;
+        margin-bottom: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .postContainer.opContainer .postInfo.desktop {
+        margin-top: 15px !important;
+        margin-bottom: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .postContainer.opContainer .postMessage {
+        margin-top: 15px !important;
+        margin-bottom: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    /* replies */
+    .extPanel.reply {
+        border: 2px dashed #4b4b4b !important;
+        background-color: #282828 !important;
+    }
+
+    .post.reply {
+        color: #dfdfdf !important;
+        border: 2px dashed #4b4b4b !important;
+        background-color: #282828 !important;
+        display: block !important;
+        padding: 15px !important;
+        margin: 10px auto !important;
+    }
+
+    .postInfo.desktop {
+        width: 100% !important;
+        display: inline-block !important;
+        font-size: 12px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .file {
+        width: 100% !important;
+        /* display: inline-block !important; for thumbnails above replies*/
+    }
+
+    .fileText {
+        width: 100% !important;
+        font-size: 12px !important;
+        margin: 15px 0 !important;
+    }
+
+    .fileThumb {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        margin-right: 15px !important;
+        margin-left: 0 !important;
+    }
+
+    .postMessage {
+        width: 100% !important;
+        margin-top: 15px !important;
+        margin-bottom: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+
+    .preview {
+        border: 2px dashed #4b4b4b !important;
+        background-color: #282828 !important;
+    }
+
+    .reply:target,
+    .reply.highlight {
+        border: 2px dashed #4b4b4b !important;
+        background-color: #1d2021 !important;
+    }
+
+    .quote {
+        color: #98971a !important;
+    }
+
+    /* quick reply */
+    #quickReply {
+        border: 2px solid #458588 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: hidden !important;
+        background-color: #222222 !important;
+    }
+
+    #qrHeader {
+        font-size: 0 !important;
+        background-color: #222222 !important;
+    }
+
+    #qrForm {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+
+    #qrForm  > div:has(input[type="text"]){
+        display: inline-block !important;
+    }
+
+    #qrForm input[type="text"] {
+        width: 100%;
+    }
+
+    #qrForm textarea,
+    #postForm tbody tr td textarea {
+
+        text-align: left;
+        border: none !important;
+        background-color: #282828 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        min-width: 360px!important;
+        min-height: 100px!important;
+        -webkit-box-sizing: content-box !important;
+    }
+
+    #qrCaptchaContainer {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        min-height: fit-content !important;
+        background-color: #1d2021!important;
+    }
+
+    #t-load {
+        width: 50% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background-color: #1d2021 !important;
+        color: #c5c8c6 !important;
+        border: none !important;
+        font-family: 'liberation mono' !important;
+    }
+
+    #t-resp {
+        display: inline-block !important;
+        width: 50% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        font-family: 'liberation mono' !important;
+        border: none !important;
+        text-align: center !important;
+        background-color: #1d2021 !important;
+        color: #c5c8c6 !important;
+    }
+
+    #t-cnt {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #t-slider {
+        -webkit-appearance: none;
+        appearance: none;
+        display: block !important;
+        background-color: #282828 !important;
+        width: 100%;
+        height: 10px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        outline: none !important;
+        /* Remove outline */
+        box-sizing: content-box !important;
+        box-shadow: none !important;
+    }
+
+    #t-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 10px !important;
+        width: 50px !important;
+        background: #888888 !important;
+        cursor: pointer;
+    }
+
+    #qrFile {
+        width: 124%!important;
+        margin: 0 !important;
+        display: inline-block !important;
+        border: 0 dashed #4b4b4b !important;
+        background-color: #1d2021 !important;
+        font-size: 10px !important;
+        font-family: monospace;
+        left: -72px !important;
+        position: relative;
+        border-top: 1px dashed #4b4b4b !important;
+        border-left: none !important;
+        border-right: none !important;
+        height: 20px !important;
+    }
+
+    #qrSpoiler {
+        width: 100% !important;
+        display: block !important;
+        font-size: 10px !important;
+        font-family: monospace;
+        background-color: #1d2021 !important;
+    }
+
+    #qrError {
+        margin: 0 !important;
+        padding: 0 !important;
+        min-width: 0 !important;
+        background-color: #222222 !important;
+        font-family: 'liberation mono' !important;
+        font-size: 9px !important;
+        font-weight: 100 !important;
+    }
+
+    #qrForm input[type=submit] {
+        font-size: 11px !important;
+        font-family: 'liberation mono' !important;
+        padding: 0 !important;
+        margin: 0 0 0 0 !important;
+        background-color: #1d2021 !important;
+        display: inline-block !important;
+        width: 100% !important;
+        height: 25px !important;
+        color: #c5c8c6 !important;
+        border-top: 1px dashed #4b4b4b !important;
+        border-bottom: none !important;
+        border-left: none !important;
+        border-right: none !important;
+    }
+
+    #qrForm input[type=submit]:focus,
+    #qrForm input[type=submit]:active {
+        border-top: 2px dashed #4d4d4d !important;
+    }
+
+
+    /* post a reply (bottom)*/
+    .navLinks.navLinksBot.desktop .open-qr-wrap {
+        position: inherit !important;
+        margin-top: 20px !important;
+        margin-bottom: 15px !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        padding: 0 !important;
+    }
+
+
+    /* delete post */
+    .bottomCtrl.desktop {
+        margin: 15px 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .bottomCtrl.desktop input[type=submit] {
+        display: inline !important;
+        border: 2px dashed #4b4b4b !important;
+        background-color: #1d2021;
+        margin-left: 4px !important;
+        color: inherit !important;
+    }
+
+    .bottomCtrl.desktop input[type=submit]:active,
+    .bottomCtrl.desktop input[type=submit]:active {
+        border: 2px dashed #ebdbb2 !important;
+    }
+}

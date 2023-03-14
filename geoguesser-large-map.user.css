@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name           geoguesser-large-map
+@namespace      github.com/diegostafa/userstyles
+@version        1.0.0
+@description    Increases the map size in geoguesser
+@author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
+==/UserStyle== */
+
+@-moz-document regexp("https?://geoguessmaster.com/.*") {
+    #map:hover {
+        height: 80% !important;
+        width: 80% !important;
+    }
+}

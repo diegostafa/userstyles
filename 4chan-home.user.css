@@ -1,0 +1,66 @@
+/* ==UserStyle==
+@name           4chan-home
+@namespace      github.com/diegostafa/userstyles
+@version        1.0.0
+@description    Unclutters the 4chan homepage
+@author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
+==/UserStyle== */
+
+@-moz-document regexp("https?://(www\\.)?4chan(nel)?\\.org/") {
+    * {
+        color: #eeffff !important;
+        background-color: #2c2c2c !important;
+    }
+
+    #boards {
+        vertical-align: middle;
+        font-family: 'liberation sans' !important;
+
+        font-weight: 300;
+    }
+
+
+
+    #logo-fp,
+    #popular-threads,
+    #ft,
+    #abc-cnt,
+    #announce {
+        display: none !important;
+    }
+
+    body {
+        padding: 8% 6% 0 6%;
+        margin: 0;
+        background: #1d2021 !important;
+    }
+
+    html {
+        background-color: #1d2021 !important;
+    }
+
+
+    .box-outer.top-box {
+        border: 2px dashed #4b4b4b !important;
+    }
+
+    #doc {
+        margin: auto;
+        padding: 0;
+        width: 100%;
+        min-width: auto;
+        background-color: #2c2c2c !important;
+    }
+
+    .boxcontent {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .column {
+        padding-top: 10px;
+        margin: 0;
+    }
+}
