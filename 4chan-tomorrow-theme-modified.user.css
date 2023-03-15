@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name           4chan-tomorrow-theme-modified
-@namespace      github.com/diegostafa/userstyles
+@namespace      https://github.com/diegostafa/userstyles
 @version        1.0.0
 @description    Unclutters the 4chan tomorrow theme
-@author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
+@author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
 ==/UserStyle== */
 @-moz-document regexp("https?://boards\\.4chan(nel)?\\.org/.*") {
 
@@ -59,9 +59,12 @@
     #t-help,
     tr.rules,
     div.passNotice,
-    #postForm > tbody > tr[data-type=Name],
-    #postForm > tbody > tr[data-type=Options],
-    img.party-hat, .adl, .postInfoM.mobile, .boardBanner {
+    #postForm>tbody>tr[data-type=Name],
+    #postForm>tbody>tr[data-type=Options],
+    img.party-hat,
+    .adl,
+    .postInfoM.mobile,
+    .boardBanner {
         display: none !important;
     }
 
@@ -96,6 +99,7 @@
         border: none !important;
         width: 80% !important;
     }
+
     #postForm tbody tr[data-type=Subject] td input[type=submit] {
         width: 20%;
         border: none !important;
@@ -112,8 +116,8 @@
         background-color: #282828 !important;
         margin: 0 !important;
         padding: 0 !important;
-        min-width: 360px!important;
-        min-height: 100px!important;
+        min-width: 360px !important;
+        min-height: 100px !important;
         -webkit-box-sizing: content-box !important;
     }
 
@@ -123,7 +127,7 @@
         margin: 0 !important;
         padding: 0 !important;
         min-height: fit-content !important;
-        background-color: #1d2021!important;
+        background-color: #1d2021 !important;
         border: none !important;
     }
 
@@ -189,7 +193,7 @@
 
     #twHeader {
         font-size: 12px !important;
-        text-align: center   !important;
+        text-align: center !important;
     }
 
 
@@ -321,7 +325,7 @@
     }
 
 
-    #qrForm  > div:has(input[type="text"]){
+    #qrForm>div:has(input[type="text"]) {
         display: inline-block !important;
     }
 
@@ -337,8 +341,8 @@
         background-color: #282828 !important;
         margin: 0 !important;
         padding: 0 !important;
-        min-width: 360px!important;
-        min-height: 100px!important;
+        min-width: 360px !important;
+        min-height: 100px !important;
         -webkit-box-sizing: content-box !important;
     }
 
@@ -347,7 +351,7 @@
         margin: 0 !important;
         padding: 0 !important;
         min-height: fit-content !important;
-        background-color: #1d2021!important;
+        background-color: #1d2021 !important;
     }
 
     #t-load {
@@ -403,7 +407,7 @@
     }
 
     #qrFile {
-        width: 124%!important;
+        width: 124% !important;
         margin: 0 !important;
         display: inline-block !important;
         border: 0 dashed #4b4b4b !important;

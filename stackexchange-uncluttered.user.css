@@ -1,12 +1,16 @@
 /* ==UserStyle==
 @name           stackexchange-uncluttered
-@namespace      github.com/diegostafa/userstyles
+@namespace      https://github.com/diegostafa/userstyles
 @version        1.0.0
 @description    Unclutters the stackexchange UI
-@author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
+@author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://stackoverflow.com/"), url-prefix("https://superuser.com/"), url-prefix("https://askubuntu.com/"), regexp("https://.*\\.stackexchange\\.com/.*") {
+@-moz-document url-prefix("https://stackoverflow.com/"),
+url-prefix("https://superuser.com/"),
+url-prefix("https://askubuntu.com/"),
+regexp("https://.*\\.stackexchange\\.com/.*") {
+
     header,
     footer,
     #left-sidebar,
@@ -19,7 +23,6 @@
     .js-dismissable-hero {
         display: none !important;
     }
-
 
     body {
         padding: 0 !important;
