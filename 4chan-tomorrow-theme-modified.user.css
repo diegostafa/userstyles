@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name           4chan-tomorrow-theme-modified
-@namespace      https://github.com/diegostafa/userstyles
+@namespace      github.com/diegostafa/userstyles
 @version        1.0.0
 @description    Unclutters the 4chan tomorrow theme
-@author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
+@author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 ==/UserStyle== */
 @-moz-document regexp("https?://boards\\.4chan(nel)?\\.org/.*") {
 
@@ -121,7 +121,6 @@
         -webkit-box-sizing: content-box !important;
     }
 
-
     #t-root {
         width: 100% !important;
         margin: 0 !important;
@@ -186,8 +185,7 @@
     /* thread watcher */
     #threadWatcher {
         margin: 0 !important;
-        padding: 0 !important;
-        border: 2px solid #458588 !important;
+        border: 1px solid #458588 !important;
         background-color: #282828 !important;
     }
 
@@ -307,8 +305,7 @@
 
     /* quick reply */
     #quickReply {
-        border: 2px solid #458588 !important;
-        padding: 0 !important;
+        border: 1px solid #458588 !important;
         margin: 0 !important;
         overflow: hidden !important;
         background-color: #222222 !important;
