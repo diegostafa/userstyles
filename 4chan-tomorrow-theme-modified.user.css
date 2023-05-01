@@ -68,7 +68,6 @@
         display: none !important;
     }
 
-
     /* new post*/
     #postForm {
         background-color: #1d2021 !important;
@@ -100,14 +99,6 @@
         width: 80% !important;
     }
 
-    #postForm tbody tr[data-type=Subject] td input[type=submit] {
-        width: 20%;
-        border: none !important;
-        color: #c5c8c6 !important;
-        background-color: #1d2021 !important;
-        font-size: 11px !important;
-        font-family: 'liberation mono' !important;
-    }
 
     #postForm tbody tr td textarea {
         color: white !important;
@@ -119,6 +110,15 @@
         min-width: 360px !important;
         min-height: 100px !important;
         -webkit-box-sizing: content-box !important;
+    }
+
+    #postForm tbody tr[data-type=Subject] td input[type=submit] {
+        width: 20%;
+        border: none !important;
+        color: #c5c8c6 !important;
+        background-color: #1d2021 !important;
+        font-size: 11px !important;
+        font-family: 'liberation mono' !important;
     }
 
     #t-root {
@@ -165,8 +165,9 @@
         font-weight: 200 !important;
     }
 
-    #togglePostFormLink a {
+    #togglePostFormLink {
         color: #458588 !important;
+        font-size: 14px !important;
         font-weight: 400 !important;
     }
 
@@ -453,9 +454,10 @@
         border-right: none !important;
     }
 
-    #qrForm input[type=submit]:focus,
-    #qrForm input[type=submit]:active {
-        border-top: 2px dashed #4d4d4d !important;
+    #qrForm input[type=submit]:active,
+    #postForm tbody tr[data-type=Subject] td input[type=submit]:active,
+    #t-load:active {
+        background-color: #333333 !important;
     }
 
 
@@ -489,5 +491,11 @@
     .bottomCtrl.desktop input[type=submit]:active,
     .bottomCtrl.desktop input[type=submit]:active {
         border: 2px dashed #ebdbb2 !important;
+    }
+}
+
+@-moz-document regexp("https?://boards\\.4chan(nel)?\\.org/.*/thread/.*") {
+    #togglePostFormLink {
+        display: none !important;
     }
 }
