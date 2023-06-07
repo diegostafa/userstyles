@@ -195,10 +195,12 @@
         text-align: center !important;
     }
 
-
-
     #watchList li {
         border: none !important;
+    }
+
+    #watchList li a:hover {
+        color: #5f89ac !important;
     }
 
 
