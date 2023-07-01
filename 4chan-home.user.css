@@ -23,7 +23,8 @@
     #popular-threads,
     #ft,
     #abc-cnt,
-    #announce {
+    #announce,
+    .danbo-slot {
         display: none !important;
     }
 
