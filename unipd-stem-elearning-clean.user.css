@@ -1,0 +1,168 @@
+/* ==UserStyle==
+@name           unipd-stem-elearning-clean
+@namespace      https://github.com/diegostafa/userstyles
+@version        1.0.0
+@description    Unclutters the unipd stem elearning UI
+@author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
+==/UserStyle== */
+
+@-moz-document regexp("https://stem.elearning.unipd.it/course/view.php.*") {
+
+    * {
+        max-height: 100% !important;
+        max-width: 100% !important;
+        transition: none !important;
+    }
+
+    header,
+    footer,
+    nav.navbar .navbar-brand,
+    nav.navbar .navbar-toggler {
+        display: none !important;
+    }
+
+    nav.navbar {
+        z-index: 1 !important;
+        position: static !important;
+        padding: 0 !important;
+        height: 35px !important;
+        border: none !important;
+    }
+
+    #user-action-menu {
+        position: absolute !important;
+        min-height: 300px !important;
+    }
+
+    .drawer {
+        top: 0 !important;
+        z-index: 3 !important;
+        position: fixed !important;
+        border-right: 2px solid black !important;
+    }
+
+
+    .drawer-toggler.drawer-left-toggle {
+        top: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        position: static !important;
+    }
+
+    .drawer-toggler.drawer-left-toggle button {
+        display: none !important;
+        border-radius: 0 !important;
+        margin: 5px !important;
+        padding: 10px !important;
+    }
+
+    .drawercontent.drag-container {
+        height: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .drawercontent::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .drawerheader {
+        background-color: #9c0014 !important;
+        height: 35px !important;
+    }
+
+    .drawerheader button {
+        width: 100% !important;
+        margin: auto !important;
+        padding: 0 !important;
+    }
+
+    .drawerheader i {
+        color: white !important;
+    }
+
+    #courseindex {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #courseindex .courseindex-section {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #courseindex .courseindex-item {
+        margin: 0 !important;
+        padding: 3px 0 !important;
+    }
+
+    .course-section-header h3.sectionname {
+        font-size: 1.3rem !important;
+    }
+
+    #page,
+    #topofscroll,
+    #theme_boost-drawers-courseindex {
+        height: 100% !important;
+        margin-top: 0 !important;
+        padding: 0 !important;
+    }
+
+    #page {
+        padding: 10px !important;
+        border: 4px solid black,
+    }
+
+    div.secondary-navigation,
+    nav div.secondary-navigation,
+    div.activity-item,
+    div.description,
+    #wrap {
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+
+    }
+
+    ul[role=menubar] {
+        margin: auto !important;
+        justify-content: space-evenly !important;
+    }
+
+    div[role=main] {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    li.nav-item {
+        height: 2rem !important;
+        padding: 0 auto !important;
+        margin: 0 !important;
+
+    }
+
+    li.activity {
+        margin: 10px !important;
+        padding: 0 !important;
+    }
+
+    li.activity .courseicon {
+        height: 32px !important;
+        width: 32px !important;
+        border: 3px solid #9c0014 !important;
+        background-color: black !important;
+        border-radius: 50%;
+    }
+
+    li.section.course-section {
+        margin: 4px 0 !important;
+        padding: 0 !important;
+        border: none !important;
+    }
+
+    #page .course-section-header {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+}
