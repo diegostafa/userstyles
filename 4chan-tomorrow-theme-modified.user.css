@@ -188,6 +188,16 @@
         margin: 0 !important;
         border: 1px solid #458588 !important;
         background-color: #282828 !important;
+        max-height: 300px !important;
+    }
+
+    #watchList {
+        max-height: 200px !important;
+        overflow: scroll !important;
+    }
+
+    #threadWatcher>div {
+        position: relative !important;
     }
 
     #twHeader {

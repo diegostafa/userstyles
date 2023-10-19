@@ -1,0 +1,166 @@
+/* ==UserStyle==
+@name           youtube-grids
+@namespace      github.com/diegostafa/userstyles
+@version        1.0.0
+@description    bigger grids in home, sub feed and search results
+@author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
+==/UserStyle== */
+
+@-moz-document url("https://www.youtube.com/"), url("https://www.youtube.com/feed/subscriptions") {
+
+    .ytd-reel-shelf-renderer {
+        display: none !important;
+    }
+
+    ytd-rich-grid-renderer {
+        margin: 8px;
+        --ytd-rich-grid-items-per-row: 5 !important;
+    }
+
+    #contents>ytd-rich-grid-row,
+    #contents>ytd-rich-grid-row>#contents {
+        display: contents;
+    }
+
+    @media only screen and (max-width: 1367px) {
+        ytd-rich-grid-renderer {
+            --ytd-rich-grid-items-per-row: 4 !important;
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        ytd-rich-grid-renderer {
+            --ytd-rich-grid-items-per-row: 3 !important;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        ytd-rich-grid-renderer {
+            --ytd-rich-grid-items-per-row: 2 !important;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        ytd-rich-grid-renderer {
+            --ytd-rich-grid-items-per-row: 1 !important;
+        }
+    }
+}
+
+@-moz-document url-prefix("https://www.youtube.com/results") {
+
+    * {
+        min-width: 0 !important;
+    }
+
+    #badges,
+    ytd-movie-renderer,
+    ytd-menu-renderer,
+    ytd-playlist-renderer #list,
+    ytd-playlist-renderer #view-more,
+    ytd-shelf-renderer,
+    ytd-reel-shelf-renderer,
+    ytd-radio-renderer,
+    #expandable-metadata.ytd-video-renderer {
+        display: none !important;
+    }
+
+    yt-showing-results-for-renderer,
+    yt-did-you-mean-renderer {
+        min-width: 100% !important;
+    }
+
+    ytd-thumbnail,
+    ytd-playlist-thumbnail {
+        min-width: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    #primary {
+        max-width: 100% !important;
+    }
+
+    #contents {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+    }
+
+    ytd-channel-renderer,
+    ytd-playlist-renderer,
+    ytd-video-renderer {
+        width: 19% !important;
+        min-width: 0 !important;
+        margin-top: 16px !important;
+    }
+
+    ytd-channel-renderer #content-section,
+    ytd-channel-renderer #info-section,
+    ytd-playlist-renderer,
+    ytd-video-renderer #dismissible {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    ytd-channel-renderer #avatar-section {
+        min-width: 100% !important;
+    }
+
+    ytd-channel-name ytd-badge-supported-renderer {
+        width: 30px;
+    }
+
+    #dismissible .text-wrapper {
+        max-width: 100% !important;
+    }
+
+    .title-and-badge {
+        min-width: 100% !important;
+    }
+
+    ytd-channel-renderer ytd-channel-name,
+    #video-title {
+        margin-top: 12px !important;
+        font-size: 1.5rem !important;
+        font-weight: 500 !important;
+        line-height: 2rem !important;
+    }
+
+    @media only screen and (max-width: 1367px) {
+
+        ytd-channel-renderer,
+        ytd-playlist-renderer,
+        ytd-video-renderer {
+            width: 24% !important;
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+
+        ytd-channel-renderer,
+        ytd-playlist-renderer,
+        ytd-video-renderer {
+            width: 32% !important;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+
+        ytd-channel-renderer,
+        ytd-playlist-renderer,
+        ytd-video-renderer {
+            width: 49% !important;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+
+        ytd-channel-renderer,
+        ytd-playlist-renderer,
+        ytd-video-renderer {
+            width: 100% !important;
+        }
+    }
+}
