@@ -2,25 +2,66 @@
 @name           old-reddit-clean
 @namespace      https://github.com/diegostafa/userstyles
 @version        1.0.0
-@description    Unclutters the old.reddit UI
+@description    a clean old.reddit UI
 @author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
 ==/UserStyle== */
 
-@-moz-document regexp("https?://old\\.reddit\\.com/.*") {
+@-moz-document url-prefix("https://old.reddit.com/"), url-prefix("https://www.reddit.com/") {
 
-    .side,
+    .sidecontentbox,
+    .sidebox,
+    .premium-banner-outer,
+    .debuginfo,
+    .listing-chooser,
+    .expando-button.collapsed.hide-when-pinned,
+    .thumbnail.invisible-when-pinned.may-blank.loggedin,
+    #sr-header-area,
+    .rank,
     .infobar.listingsignupbar,
     .footer-parent,
-    .usertext.cloneable,
-    .flat-list.buttons,
     .midcol,
-    #header {
+    .panestack-title {
         display: none !important;
     }
 
+    .menuarea {
+        margin: 4px !important;
+    }
+
+    #header-img {
+        margin: 0 !important;
+        width: 36px !important;
+    }
+
+}
+
+@-moz-document regexp("https://old.reddit.com/r/.*/comments/.*"), regexp("https://www.reddit.com/r/.*/comments/.*") {
+
+    .help-toggle,
+    .side,
+    .reddiquette {
+        display: none !important;
+    }
+
+    .top-matter .tagline {
+        margin-bottom: 10px !important;
+    }
+
     .comment {
-        border: 1px solid #808080;
+        border: 1px solid #444444;
         margin: 4px;
         padding: 4px;
+    }
+
+    #siteTable .thing {
+        margin: 0 !important;
+    }
+
+    #siteTable .thing .entry {
+        margin: 0 !important;
+    }
+
+    .commentarea>.usertext.cloneable.warn-on-unload {
+        margin: 4px !important;
     }
 }

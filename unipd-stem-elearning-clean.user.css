@@ -2,9 +2,27 @@
 @name           unipd-stem-elearning-clean
 @namespace      https://github.com/diegostafa/userstyles
 @version        1.0.0
-@description    Unclutters the unipd stem elearning UI
+@description    a clean unipd.stem.elearning UI
 @author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
 ==/UserStyle== */
+
+@-moz-document domain("shibidp.cca.unipd.it") {
+
+    body {
+        background: none !important;
+    }
+
+    .container {
+        margin-top: 8vh !important;
+    }
+
+    .row.vertical-align img,
+    .lingue,
+    .col-xs-12>.row,
+    footer {
+        display: none;
+    }
+}
 
 @-moz-document regexp("https://stem.elearning.unipd.it/course/view.php.*") {
 

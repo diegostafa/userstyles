@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name           simple-scrollbar
-@namespace      https://github.com/diegostafa/userstyles
+@namespace      github.com/diegostafa/userstyles
 @version        1.0.0
-@description    Reduces the scrollbar width
-@author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
+@description    a smaller and flat scrollbar
+@author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 ==/UserStyle== */
 
 ::-webkit-scrollbar {
-    width: 8px !important;
+    width: 6px !important;
 }
 
 ::-webkit-scrollbar-thumb {
