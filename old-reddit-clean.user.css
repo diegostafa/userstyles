@@ -1,25 +1,23 @@
 /* ==UserStyle==
 @name           old-reddit-clean
 @namespace      https://github.com/diegostafa/userstyles
-@version        1.0.0
+@version        1.0.1
 @description    a clean old.reddit UI
 @author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://old.reddit.com/"), url-prefix("https://www.reddit.com/") {
+@-moz-document url-prefix("https://www.reddit.com/"), url-prefix("https://old.reddit.com/") {
 
+    .side,
     .sidecontentbox,
     .sidebox,
     .premium-banner-outer,
     .debuginfo,
     .listing-chooser,
-    .expando-button.collapsed.hide-when-pinned,
-    .thumbnail.invisible-when-pinned.may-blank.loggedin,
     #sr-header-area,
     .rank,
     .infobar.listingsignupbar,
     .footer-parent,
-    .midcol,
     .panestack-title {
         display: none !important;
     }
@@ -32,11 +30,186 @@
         margin: 0 !important;
         width: 36px !important;
     }
-
 }
 
-@-moz-document regexp("https://old.reddit.com/r/.*/comments/.*"), regexp("https://www.reddit.com/r/.*/comments/.*") {
+@-moz-document regexp("https://(old|www).reddit.com/(|r/[0-9A-Za-z]*/)(|search.*|hot|new|rising|controversial|top|top/.*)/?"), regexp("https://(old|www).reddit.com/([0-9A-Za-z]*/)?") {
 
+    .midcol,
+    .expando-button {
+        display: none !important;
+    }
+
+    .side {
+        float: left !important;
+        max-width: 10% !important;
+        min-width: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .side .spacer * {
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    #siteTable {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: space-around !important;
+    }
+
+    #siteTable>.thing {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 18% !important;
+        max-width: 18% !important;
+        padding: 8px !important;
+        border: none gray !important;
+        border-radius: 8px !important;
+        background-color: #ffffff0c !important;
+    }
+
+    .thing * {
+        max-width: 100% !important;
+    }
+
+    .thing .entry {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .thing .expando {
+        width: 300px !important;
+        position: absolute;
+        z-index: 100;
+        background-color: black !important;
+    }
+
+    .thing .thumbnail,
+    .thing .thumbnail img {
+        background: none !important;
+        background-color: #3f3f3f !important;
+        border-radius: 8px !important;
+        height: 60px;
+        width: 100% !important;
+    }
+
+    .thing .thumbnail img {
+        object-fit: contain !important;
+    }
+
+    .thing .thumbnail {
+        display: none !important;
+        margin: 0.2rem auto !important;
+    }
+
+    .thing .title {
+        font-size: 1rem !important;
+        display: block !important;
+        margin: 0 !important;
+    }
+
+    .thing .title,
+    .thing .title * {
+        width: auto !important;
+    }
+
+    .thing .title .domain {
+        font-size: 0.7rem !important;
+    }
+
+    .thing .title span {
+        font-size: 0.7rem !important;
+        padding: 0 !important;
+    }
+
+    .thing .tagline {
+        font-size: 0.7rem !important;
+        padding: 4px 0 !important;
+        flex: auto;
+    }
+
+    .thing .tagline a {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .thing .entry {
+        height: 100% !important;
+    }
+
+    .thing .top-matter {
+        height: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    .thing .top-matter ul {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+        padding: 0 !important;
+        border: 1px solid gray;
+    }
+
+    .thing .top-matter ul li {
+        padding: 0 !important;
+        display: none !important;
+    }
+
+    .thing .top-matter ul li.first {
+        display: initial !important;
+        margin: 0 auto !important;
+    }
+
+    .thing .top-matter ul li a {
+        font-size: 0.8rem !important;
+        font-weight: bold !important;
+    }
+
+    @media only screen and (max-width: 1367px) {
+        #siteTable>.thing {
+            display: flex !important;
+            flex-direction: column !important;
+            width: 18% !important;
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        #siteTable>.thing {
+            display: flex !important;
+            flex-direction: column !important;
+            width: 23% !important;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        #siteTable>.thing {
+            display: flex !important;
+            flex-direction: column !important;
+            width: 30% !important;
+        }
+
+        .side {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        #siteTable>.thing {
+            display: flex !important;
+            flex-direction: column !important;
+            width: 90% !important;
+        }
+
+    }
+}
+
+
+@-moz-document regexp("https://(old|www).reddit.com/r/.*/comments/.*") {
+
+    .thumbnail.may-blank,
     .help-toggle,
     .side,
     .reddiquette {
@@ -47,18 +220,15 @@
         margin-bottom: 10px !important;
     }
 
+    .md,
+    .md p {
+        max-width: initial !important;
+    }
+
     .comment {
         border: 1px solid #444444;
         margin: 4px;
         padding: 4px;
-    }
-
-    #siteTable .thing {
-        margin: 0 !important;
-    }
-
-    #siteTable .thing .entry {
-        margin: 0 !important;
     }
 
     .commentarea>.usertext.cloneable.warn-on-unload {

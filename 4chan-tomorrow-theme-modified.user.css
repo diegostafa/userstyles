@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           4chan-tomorrow-theme-modified
 @namespace      github.com/diegostafa/userstyles
-@version        1.0.0
+@version        1.0.1
 @description    a clean tomorrow theme
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 ==/UserStyle== */
@@ -78,6 +78,9 @@
     body,
     html {
         background-color: #1d2021 !important;
+    }
+
+    html {
         padding: 0 1% !important;
     }
 
@@ -91,17 +94,17 @@
         color: #458588 !important;
     }
 
-    .deadlink{
+    .deadlink {
         text-decoration: none !important;
     }
 
     .deadlink a:link,
-    .deadlink a:visited{
+    .deadlink a:visited {
         color: #9b0000 !important;
     }
 
     .deadlink a:hover,
-    .deadlink a:active{
+    .deadlink a:active {
         color: #c10000 !important;
     }
 
