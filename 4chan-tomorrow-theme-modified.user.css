@@ -6,10 +6,6 @@
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 ==/UserStyle== */
 
-/*
-    todo: use variables
-*/
-
 @-moz-document regexp("https?://(www\\.)?4chan(nel)?\\.org/.*") {
 
     * {
@@ -175,7 +171,6 @@
         width: 80% !important;
     }
 
-
     #postForm tbody tr td textarea {
         color: white !important;
         text-align: left;
@@ -212,7 +207,6 @@
         font-family: 'liberation mono';
     }
 
-
     /* catalog */
     #content {
         color: #dfdfdf !important;
@@ -228,7 +222,6 @@
         flex-wrap: wrap;
         margin: 0 !important;
     }
-
 
     /* header */
     .boardBanner {
@@ -257,7 +250,6 @@
         text-align: center !important;
         margin: 0 auto !important;
     }
-
 
     /* thread watcher */
     #threadWatcher {
@@ -288,7 +280,6 @@
     #watchList li a:hover {
         color: #5f89ac !important;
     }
-
 
     /* OP */
     .postContainer.opContainer {
@@ -375,7 +366,6 @@
         margin-right: 0 !important;
         margin-left: 0 !important;
     }
-
 
     .preview {
         border: 2px dashed #4b4b4b !important;
@@ -476,7 +466,6 @@
         margin: 0 !important;
         padding: 0 !important;
         outline: none !important;
-        /* Remove outline */
         box-sizing: content-box !important;
         box-shadow: none !important;
     }
@@ -546,7 +535,6 @@
         background-color: #333333 !important;
     }
 
-
     /* post a reply (bottom)*/
     .navLinks.navLinksBot.desktop .open-qr-wrap {
         position: inherit !important;
@@ -556,7 +544,6 @@
         margin-left: auto !important;
         padding: 0 !important;
     }
-
 
     /* delete post */
     .bottomCtrl.desktop {
@@ -581,6 +568,7 @@
 }
 
 @-moz-document regexp("https?://boards\\.4chan(nel)?\\.org/.*/thread/.*") {
+
     #togglePostFormLink {
         display: none !important;
     }

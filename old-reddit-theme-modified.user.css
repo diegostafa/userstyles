@@ -1,13 +1,22 @@
 /* ==UserStyle==
-@name           old-reddit-clean
+@name           old-reddit-theme-modified
 @namespace      https://github.com/diegostafa/userstyles
 @version        1.0.1
-@description    a clean old.reddit UI
+@description    a clean old.reddit theme
 @author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
 ==/UserStyle== */
 
+@-moz-document url-prefix("https://www.reddit.com/") {
+
+    #header-img {
+        margin: 0 !important;
+        width: 36px !important;
+    }
+}
+
 @-moz-document url-prefix("https://www.reddit.com/"), url-prefix("https://old.reddit.com/") {
 
+    .infobar.commentsignupbar,
     .side,
     .sidecontentbox,
     .sidebox,
@@ -26,9 +35,21 @@
         margin: 4px !important;
     }
 
-    #header-img {
+    body,
+    html {
         margin: 0 !important;
-        width: 36px !important;
+        padding: 0 !important;
+        overflow: initial !important;
+
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
+
+    .content {
+        margin-left: 12px !important;
+        margin-right: 12px !important;
+        background-color: transparent !important;
+        padding: 0 !important;
     }
 }
 
@@ -37,6 +58,11 @@
     .midcol,
     .expando-button {
         display: none !important;
+    }
+
+    .nav-buttons {
+        width: 100% !important;
+        max-width: 100% !important;
     }
 
     .side {
@@ -54,18 +80,20 @@
     #siteTable {
         display: flex !important;
         flex-wrap: wrap !important;
-        justify-content: space-around !important;
+        max-width: 100% !important;
     }
 
-    #siteTable>.thing {
+    .thing,
+    .thing.last-clicked {
+        left: initial !important;
         display: flex !important;
         flex-direction: column !important;
-        width: 18% !important;
-        max-width: 18% !important;
+        margin: 8px auto !important;
         padding: 8px !important;
-        border: none gray !important;
+        width: 18% !important;
         border-radius: 8px !important;
         background-color: #ffffff0c !important;
+        border: 1px solid #505050;
     }
 
     .thing * {
@@ -144,13 +172,13 @@
         justify-content: space-between;
     }
 
-
     .thing .top-matter ul {
         display: flex !important;
         flex-wrap: wrap !important;
         justify-content: space-between !important;
         padding: 0 !important;
-        border: 1px solid gray;
+        border-radius: 8px;
+        border: 1px solid #505050;
     }
 
     .thing .top-matter ul li {
@@ -170,42 +198,28 @@
 
     @media only screen and (max-width: 1367px) {
         #siteTable>.thing {
-            display: flex !important;
-            flex-direction: column !important;
             width: 18% !important;
         }
     }
 
     @media only screen and (max-width: 1024px) {
         #siteTable>.thing {
-            display: flex !important;
-            flex-direction: column !important;
-            width: 23% !important;
+            width: 24% !important;
         }
     }
 
     @media only screen and (max-width: 900px) {
         #siteTable>.thing {
-            display: flex !important;
-            flex-direction: column !important;
             width: 30% !important;
-        }
-
-        .side {
-            display: none;
         }
     }
 
     @media only screen and (max-width: 480px) {
         #siteTable>.thing {
-            display: flex !important;
-            flex-direction: column !important;
             width: 90% !important;
         }
-
     }
 }
-
 
 @-moz-document regexp("https://(old|www).reddit.com/r/.*/comments/.*") {
 
