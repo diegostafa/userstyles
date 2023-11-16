@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           old-reddit-theme-modified
 @namespace      https://github.com/diegostafa/userstyles
-@version        1.0.2
+@version        1.0.3
 @description    a clean old.reddit theme
 @author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
 ==/UserStyle== */
@@ -16,6 +16,9 @@
 
 @-moz-document url-prefix("https://www.reddit.com/"), url-prefix("https://old.reddit.com/") {
 
+    .seo-comments-recommendations,
+    .midcol,
+    #eu-cookie-policy,
     .infobar.commentsignupbar,
     .side,
     .sidecontentbox,
@@ -31,31 +34,26 @@
         display: none !important;
     }
 
-    .menuarea {
-        margin: 4px !important;
-    }
 
     body,
     html {
         margin: 0 !important;
         padding: 0 !important;
         overflow: initial !important;
-
         min-width: 0 !important;
         max-width: 100% !important;
     }
 
     .content {
-        margin-left: 12px !important;
-        margin-right: 12px !important;
+        margin: 12px !important;
+        ;
         background-color: transparent !important;
         padding: 0 !important;
     }
 }
 
-@-moz-document regexp("https://(old|www).reddit.com/(|r/[0-9A-Za-z]*/)(|search.*|hot|new|rising|controversial|top|top/.*)/?"), regexp("https://(old|www).reddit.com/([0-9A-Za-z]*/)?") {
+@-moz-document regexp("https://(old|www).reddit.com/(|\\?.*)(|r/[0-9A-Za-z]*/)(|search.*|hot|new|rising|controversial|top|top/.*)/?"), regexp("https://(old|www).reddit.com/([0-9A-Za-z]*/)?") {
 
-    .midcol,
     .expando-button {
         display: none !important;
     }
@@ -88,11 +86,10 @@
         left: initial !important;
         display: flex !important;
         flex-direction: column !important;
-		margin: 0 auto 4px  auto !important;
+        margin: 0 auto 4px auto !important;
         padding: 8px !important;
         width: 18% !important;
         border-radius: 8px !important;
-        background-color: #ffffff0c !important;
         border: 1px solid #505050;
     }
 
@@ -167,9 +164,9 @@
 
     .thing .top-matter {
         height: 100% !important;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
     }
 
     .thing .top-matter ul {
@@ -177,23 +174,25 @@
         flex-wrap: wrap !important;
         justify-content: space-between !important;
         padding: 0 !important;
-        border-radius: 8px;
-        border: 1px solid #505050;
     }
 
     .thing .top-matter ul li {
         padding: 0 !important;
         display: none !important;
+        width: 100% !important;
     }
 
     .thing .top-matter ul li.first {
         display: initial !important;
-        margin: 0 auto !important;
     }
 
     .thing .top-matter ul li a {
         font-size: 0.8rem !important;
         font-weight: bold !important;
+        display: block !important;
+        text-align: center !important;
+        border-radius: 8px !important;
+        border: 1px solid #505050 !important;
     }
 
     @media only screen and (max-width: 1367px) {
@@ -204,7 +203,7 @@
 
     @media only screen and (max-width: 1024px) {
         #siteTable>.thing {
-            width: 24% !important;
+            width: 22% !important;
         }
     }
 
@@ -223,6 +222,9 @@
 
 @-moz-document regexp("https://(old|www).reddit.com/r/.*/comments/.*") {
 
+    .seo-comments.spacer,
+    #bottom-comments,
+    #noresults,
     .thumbnail.may-blank,
     .help-toggle,
     .side,
@@ -230,19 +232,41 @@
         display: none !important;
     }
 
+    .menuarea {
+        margin: 4px 0 !important;
+        padding: 4px !important;
+        border: 1px solid #444444 !important;
+        width: fit-content !important;
+    }
+
+    .menuarea .spacer {
+        margin: 0 !important;
+    }
+
+    .thing.self .usertext-body .md {
+        border-radius: 0 !important;
+    }
+
+    .entry {
+        margin: 0 !important;
+    }
+
     .top-matter .tagline {
         margin-bottom: 10px !important;
     }
 
+    .entry,
+    .usertext,
     .md,
     .md p {
         max-width: initial !important;
     }
 
     .comment {
-        border: 1px solid #444444;
-        margin: 4px;
-        padding: 4px;
+        border: 1px solid #444444 !important;
+        margin: 4px 0 !important;
+        ;
+        padding: 8px !important;
     }
 
     .commentarea>.usertext.cloneable.warn-on-unload {

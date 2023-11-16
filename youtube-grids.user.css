@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube-grids
 @namespace      github.com/diegostafa/userstyles
-@version        1.0.1
+@version        1.0.3
 @description    bigger grids in home, sub feed and search results
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 ==/UserStyle== */
@@ -53,6 +53,7 @@
         min-width: 0 !important;
     }
 
+    ytd-secondary-search-container-renderer,
     #badges,
     ytd-movie-renderer,
     ytd-menu-renderer,

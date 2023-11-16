@@ -12,6 +12,7 @@ url-prefix("https://askubuntu.com/"),
 regexp("https://.*\\.stackexchange\\.com/.*"),
 url-prefix("https://mathoverflow.net/") {
 
+    .js-consent-banner,
     header,
     footer,
     #left-sidebar,
