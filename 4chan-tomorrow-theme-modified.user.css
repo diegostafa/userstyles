@@ -1,12 +1,20 @@
 /* ==UserStyle==
 @name           4chan-tomorrow-theme-modified
 @namespace      github.com/diegostafa/userstyles
-@version        1.0.1
+@version        1.0.2
 @description    a clean tomorrow theme
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 ==/UserStyle== */
 
+
 @-moz-document regexp("https?://(www\\.)?4chan(nel)?\\.org/.*") {
+
+    html:has(.zone-name-title) *
+    {
+        margin: 0 !important;
+        max-width: 100% !important;
+        background-color: #1d2021 !important;
+    }
 
     * {
         color: #eeffff !important;
@@ -16,7 +24,6 @@
     #boards {
         vertical-align: middle;
         font-family: 'liberation sans' !important;
-
         font-weight: 300;
     }
 
@@ -30,7 +37,7 @@
     }
 
     body {
-        padding: 8% 6% 0 6%;
+        padding: 15px 80px;
         margin: 0;
         background: #1d2021 !important;
     }
@@ -64,6 +71,7 @@
         margin: 0;
     }
 }
+
 
 @-moz-document regexp("https?://boards\\.4chan(nel)?\\.org/.*") {
 

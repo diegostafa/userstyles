@@ -1,0 +1,244 @@
+/* ==UserStyle==
+@name           better-google-search
+@namespace      github.com/diegostafa/userstyles
+@version        1.0.0
+@description    improved google search ui
+@author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
+@preprocessor   default
+@var            color acn "Accent color" #ffffff0a
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.google.com/search") {
+
+    #main, .LHJvCe, #searchform *:not(span):not(a){
+        max-width: 100% !important;
+        min-width: 0 !important;
+        width: auto !important;
+    }
+
+    .TzHB6b.cLjAic.LMRCfc:has(path[d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"]),
+    .ClPXac.Pqkn2e,
+    .g div[aria-label="About this result"],
+    div[aria-label="Watch show"],
+    div[aria-label="Search by voice"],
+    .kno-ftr,
+    .tgqOk,
+    .YPxNKd,
+    .epKdHc,
+    .GCSyeb.iNlBQe,
+    .TzHB6b .oIk2Cb,
+    .ULSxyf .uVMCKf,
+    .ULSxyf .EyBRub,
+    .KFFQ0c.xKf9F,
+    .xtSCL,
+    .sfbg,
+    hr,
+    div[aria-label="People also search for"],
+    .mNh24c,
+    .uzfIAc,
+    .PmPt7d.QprcBd,
+    .cUnQKe,
+    #bres,
+    div[data-st-tgt="stb"],
+    #sfcnt
+    {
+        display: none !important;
+    }
+
+    .Q3DXx{
+        width: 100% !important;
+    }
+
+    .I6TXqe{
+        margin: 0 !important;
+        border: none !important;
+        background-color: transparent!important;
+    }
+
+    .hlcw0c,
+    .ULSxyf {
+        margin-bottom: 0 !important;
+    }
+
+    #searchform {
+        position: initial !important;
+        margin-top: 10px !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        width: auto !important;
+        margin-left: 40px !important;
+        margin-right: 40px !important;
+        padding: 0 40px !important;
+    }
+
+    #searchform .RNNXgb{
+        width: 100%!important;
+    }
+
+    #searchform form .A8SBwf{
+        width: 100%!important;
+        padding: 0 !important;
+        margin-left: 110px !important;
+    }
+
+    #appbar{
+        padding: 0 !important;
+        margin: 0 80px !important;
+    }
+
+    div.sBbkle[role="navigation"] {
+        padding-left: 0 !important;
+        margin: 0 80px !important;
+    }
+
+    #rcnt {
+        width: auto !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        display: flex !important;
+    }
+
+    #center_col {
+        max-width: initial !important;
+        min-width: 0 !important;
+        width: 100% !important;
+        margin: 0 40px !important;
+        padding: 0 40px !important;
+        order: 2 !important;
+    }
+
+    .XqFnDf {
+        margin: 0 40px !important;
+        padding: 0 40px !important;
+        order: 1 !important;
+        width: 100% !important;
+        max-width: initial !important;
+        min-width: 0 !important;
+    }
+
+    .HdbW6.MjUjnf.VM6qJ {
+        width: auto !important;
+        max-width: initial !important;
+        min-width: 0 !important;
+        margin: 10px auto !important;
+    }
+
+    #rhs {
+        margin: 0 40px !important;
+        padding: 0 40px !important;
+        order: 1 !important;
+        width: 100% !important;
+        max-width: initial !important;
+        min-width: 0 !important;
+    }
+
+    .kp-wholepage.Jb0Zif{
+        width: auto !important;
+        max-width: initial !important;
+        min-width: 0 !important;
+        margin: 10px auto !important;
+    }
+
+    .KcXNxb{
+        background-color: transparent !important;
+    }
+
+    #rhs>div[aria-label="About"] {
+        width: auto !important;
+        max-width: initial !important;
+        min-width: 0 !important;
+        margin: 10px auto !important;
+    }
+
+    #rhs>div[aria-label="About"] div.wp-ms {
+        width: auto !important;
+        max-width: initial !important;
+        min-width: 0 !important;
+    }
+
+    #rhs>div[aria-label="About"] div[role="heading"] {
+        width: auto !important;
+        max-width: initial !important;
+        min-width: 0 !important;
+        margin: 0 auto !important;
+        padding: 0 10px !important;
+    }
+
+
+    #rhs>div[aria-label="About"] .xGj8Mb {
+        width: auto !important;
+        max-width: initial !important;
+        min-width: 0 !important;
+        margin: 0px !important;
+
+    }
+
+    .xpdopen {
+        width: auto !important;
+        max-width: initial !important;
+        min-width: 0 !important;
+        background-color: var(--acn) !important;
+    }
+
+
+    .M8OgIe {
+        max-width: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    #kp-wp-tab-overview>div {
+        margin: 0 !important;
+    }
+
+    .g {
+        min-width: 0 !important;
+        width: auto !important;
+        margin: 10px auto !important;
+    }
+
+    .g span{
+        position: relative !important;
+    }
+
+    #rhs .TzHB6b, #rhs .HdbW6{
+        margin: 10px auto !important;
+
+    }
+
+    #rhs .kp-wholepage-osrp{
+        margin: 0 auto !important;
+    }
+
+
+    #rhs.TQc1id.IVvPP.Jb0Zif.rhstc4.yqK6Z{
+        display: flex !important;;
+        flex-wrap: wrap !important;
+        justify-content: space-evenly !important;
+        margin: 0 80px !important;
+    }
+
+    #tw-main > div{
+        width: 100% !important;
+    }
+
+    #tw-main,
+    .TzHB6b.cLjAic.LMRCfc,
+    .kp-wholepage-osrp.ss6qqb.u7yw9,
+    .xpdbox,
+    .HdbW6.MjUjnf.VM6qJ,
+    #rhs>div[aria-label="About"],
+    #rhs>div[aria-label="About"] .xGj8Mb,
+    #rhs.TQc1id.IVvPP.Jb0Zif.rhstc4.yqK6Z,
+    #rhs .TzHB6b[role="complementary"],
+    #rhs .HdbW6,
+    .g
+    {
+        border: none !important;
+        padding: 10px !important;
+        background-color: var(--acn) !important;
+        border-radius: 15px !important;
+    }
+
+}

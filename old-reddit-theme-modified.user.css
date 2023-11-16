@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           old-reddit-theme-modified
 @namespace      https://github.com/diegostafa/userstyles
-@version        1.0.1
+@version        1.0.2
 @description    a clean old.reddit theme
 @author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
 ==/UserStyle== */
@@ -88,7 +88,7 @@
         left: initial !important;
         display: flex !important;
         flex-direction: column !important;
-        margin: 8px auto !important;
+		margin: 0 auto 4px  auto !important;
         padding: 8px !important;
         width: 18% !important;
         border-radius: 8px !important;
