@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        1.0.0
+@version        1.0.1
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   default
@@ -16,7 +16,8 @@
         width: auto !important;
     }
 
-    .TzHB6b.cLjAic.LMRCfc:has(path[d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"]),
+    #taw,
+    [class="TzHB6b cLjAic"]:has(path[d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"]),
     .ClPXac.Pqkn2e,
     .g div[aria-label="About this result"],
     div[aria-label="Watch show"],
@@ -129,7 +130,7 @@
         margin: 0 40px !important;
         padding: 0 40px !important;
         order: 1 !important;
-        width: 100% !important;
+        width: auto !important;
         max-width: initial !important;
         min-width: 0 !important;
     }
@@ -202,15 +203,20 @@
         position: relative !important;
     }
 
-    #rhs .TzHB6b, #rhs .HdbW6{
+
+    #rhs .TzHB6b.Hwkikb.WY0eLb.yqK6Z, #rhs [class="kp-wholepage-osrp"]{
         margin: 10px auto !important;
-
+        width: 47%;
+        min-width: initial;
+        max-width: initial !important;
     }
 
-    #rhs .kp-wholepage-osrp{
-        margin: 0 auto !important;
+    #rhs .HdbW6{
+        padding: 0 !important;
+        margin: 0 !important;
+        width: auto !important;
+        border: none !important;
     }
-
 
     #rhs.TQc1id.IVvPP.Jb0Zif.rhstc4.yqK6Z{
         display: flex !important;;
@@ -223,6 +229,12 @@
         width: 100% !important;
     }
 
+    .dG2XIf.Wnoohf.OJXvsb{
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
     #tw-main,
     .TzHB6b.cLjAic.LMRCfc,
     .kp-wholepage-osrp.ss6qqb.u7yw9,
@@ -232,7 +244,7 @@
     #rhs>div[aria-label="About"] .xGj8Mb,
     #rhs.TQc1id.IVvPP.Jb0Zif.rhstc4.yqK6Z,
     #rhs .TzHB6b[role="complementary"],
-    #rhs .HdbW6,
+    #rhs [class="kp-wholepage-osrp"],
     .g
     {
         border: none !important;
