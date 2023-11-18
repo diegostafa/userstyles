@@ -1,6 +1,6 @@
 |Style|Link|
 |---|---|
-|better-google-search|[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://github.com/diegostafa/userstyles/raw/master/better-google-search.user.css)|
+|google-full-width|[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://github.com/diegostafa/userstyles/raw/master/google-full-width.user.css)|
 |youtube-grids|[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://github.com/diegostafa/userstyles/raw/master/youtube-grids.user.css)|
 |4chan-tomorrow-theme-modified|[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://github.com/diegostafa/userstyles/raw/master/4chan-tomorrow-theme-modified.user.css)|
 |old-reddit-theme-modified|[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://github.com/diegostafa/userstyles/raw/master/old-reddit-theme-modified.user.css)|

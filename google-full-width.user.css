@@ -5,17 +5,41 @@
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   default
-@var            color acn "Accent color" #ffffff0a
+@var            color acn "Accent color" #ffffff06
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.google.com/search") {
 
-    #main, .LHJvCe, #searchform *:not(span):not(a){
+    body{
+        margin:0 40px !important;
+        padding:0 40px !important;
+        overflow-x:hidden !important;
+    }
+
+    *{
+        transform: initial !important;
+    }
+
+    .M8OgIe{
+        overflow:scroll !important;
+        scrollbar-width: none;
+    }
+
+    .M8OgIe::-webkit-scrollbar {
+    display: none;
+    }
+
+    html, body,
+    #main,
+    .LHJvCe,
+    #searchform *:not(span):not(a)
+    {
         max-width: 100% !important;
         min-width: 0 !important;
         width: auto !important;
     }
 
+    #sfooter,
     #taw,
     [class="TzHB6b cLjAic"]:has(path[d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"]),
     .ClPXac.Pqkn2e,
@@ -67,52 +91,58 @@
         min-width: 0 !important;
         max-width: 100% !important;
         width: auto !important;
-        margin-left: 40px !important;
-        margin-right: 40px !important;
-        padding: 0 40px !important;
-    }
-
-    #searchform .RNNXgb{
-        width: 100%!important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 40px !important;
+        overflow:hidden !important;
     }
 
     #searchform form .A8SBwf{
         width: 100%!important;
         padding: 0 !important;
-        margin-left: 110px !important;
+        margin-left: 70px !important;
     }
 
     #appbar{
+        border:none !important;
         padding: 0 !important;
-        margin: 0 80px !important;
+        margin: 0 auto!important;
     }
 
-    div.sBbkle[role="navigation"] {
-        padding-left: 0 !important;
-        margin: 0 80px !important;
-    }
-
-    #rcnt {
+    .IUOThf{
         width: auto !important;
-        max-width: 100% !important;
-        min-width: 0 !important;
-        margin: 0 auto !important;
+    }
+
+
+    .rfiSsc.wtAAQb .sBbkle.y3NyWc{
         padding: 0 !important;
-        display: flex !important;
+        margin: 0 !important;
+        padding-bottom: 5px !important;
+    }
+
+    .rfiSsc .sBbkle,
+    .rfiSsc.XtQzZd .sBbkle,
+    .rfiSsc.XtQzZd .sBbkle .bSeRjc{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .rfiSsc.wtAAQb *{
+        position: relative !important;
     }
 
     #center_col {
         max-width: initial !important;
         min-width: 0 !important;
         width: 100% !important;
-        margin: 0 40px !important;
-        padding: 0 40px !important;
+        margin: 0 !important;
+        padding: 0 !important;
         order: 2 !important;
     }
 
     .XqFnDf {
-        margin: 0 40px !important;
-        padding: 0 40px !important;
+        margin: 0 !important;
+        padding: 0 !important;
         order: 1 !important;
         width: 100% !important;
         max-width: initial !important;
@@ -127,16 +157,16 @@
     }
 
     #rhs {
-        margin: 0 40px !important;
-        padding: 0 40px !important;
+        margin: 0 !important;
+        padding: 0 !important;
         order: 1 !important;
-        width: auto !important;
+        width: 100% !important;
         max-width: initial !important;
         min-width: 0 !important;
     }
 
     .kp-wholepage.Jb0Zif{
-        width: auto !important;
+        width: 100% !important;
         max-width: initial !important;
         min-width: 0 !important;
         margin: 10px auto !important;
@@ -176,6 +206,10 @@
 
     }
 
+    [class="gqLncc card-section KDCVqf"]{
+        order: -2 !important;
+    }
+
     .xpdopen {
         width: auto !important;
         max-width: initial !important;
@@ -203,17 +237,21 @@
         position: relative !important;
     }
 
-
-    #rhs .TzHB6b.Hwkikb.WY0eLb.yqK6Z, #rhs [class="kp-wholepage-osrp"]{
-        margin: 10px auto !important;
-        width: 47%;
+    #rhs .yTFeqb.wp-ms.oJxARb.nBWfrd.i8qq8b,
+    #rhs .TzHB6b.Hwkikb.WY0eLb.LMRCfc.EqrSYc,
+    #rhs .TzHB6b.Hwkikb.WY0eLb.yqK6Z,
+    #rhs .KsRP6
+    {
+        width: auto !important;
         min-width: initial;
-        max-width: initial !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+
     }
 
+    #rhs .Hwkikb.WY0eLb,
     #rhs .HdbW6{
         padding: 0 !important;
-        margin: 0 !important;
         width: auto !important;
         border: none !important;
     }
@@ -222,7 +260,7 @@
         display: flex !important;;
         flex-wrap: wrap !important;
         justify-content: space-evenly !important;
-        margin: 0 80px !important;
+        margin: 0 !important;
     }
 
     #tw-main > div{
@@ -247,10 +285,18 @@
     #rhs [class="kp-wholepage-osrp"],
     .g
     {
+        margin: 10px auto !important;
         border: none !important;
         padding: 10px !important;
         background-color: var(--acn) !important;
         border-radius: 15px !important;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        body {
+            margin: 0 5px !important;
+            padding: 0 5px !important;
+        }
     }
 
 }
