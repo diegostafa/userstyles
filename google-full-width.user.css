@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           google-full-width
 @namespace      github.com/diegostafa/userstyles
-@version        1.0.1
+@version        1.0.3
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   default
@@ -9,36 +9,38 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.google.com/search") {
-
-    body{
-        margin:0 40px !important;
-        padding:0 40px !important;
-        overflow-x:hidden !important;
-    }
-
-    *{
+    * {
         transform: initial !important;
     }
 
-    .M8OgIe{
-        overflow:scroll !important;
+    body {
+        margin: 0 40px !important;
+        padding: 0 40px !important;
+        overflow-x: hidden !important;
+    }
+
+    .M8OgIe {
+        overflow: scroll !important;
         scrollbar-width: none;
     }
 
     .M8OgIe::-webkit-scrollbar {
-    display: none;
+        display: none;
     }
 
-    html, body,
+    html,
+    body,
+    #rcnt,
     #main,
     .LHJvCe,
-    #searchform *:not(span):not(a)
-    {
+    #searchform *:not(span):not(a) {
         max-width: 100% !important;
         min-width: 0 !important;
         width: auto !important;
     }
 
+    .di8g3.ChOqnd.wY1UTc,
+    .g table.jmjoTe tr:has(form),
     #sfooter,
     #taw,
     [class="TzHB6b cLjAic"]:has(path[d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"]),
@@ -52,6 +54,10 @@
     .epKdHc,
     .GCSyeb.iNlBQe,
     .TzHB6b .oIk2Cb,
+    .TzHB6b.cLjAic:has(.RYdNQb),
+    .TzHB6b.cLjAic:has(.VUsyle),
+    .TzHB6b.cLjAic:has([data-ti="Videos"]),
+    .TzHB6b.cLjAic.LMRCfc:has(g-section-with-header),
     .ULSxyf .uVMCKf,
     .ULSxyf .EyBRub,
     .KFFQ0c.xKf9F,
@@ -65,19 +71,18 @@
     .cUnQKe,
     #bres,
     div[data-st-tgt="stb"],
-    #sfcnt
-    {
+    #sfcnt {
         display: none !important;
     }
 
-    .Q3DXx{
+    .Q3DXx {
         width: 100% !important;
     }
 
-    .I6TXqe{
+    .I6TXqe {
         margin: 0 !important;
         border: none !important;
-        background-color: transparent!important;
+        background-color: transparent !important;
     }
 
     .hlcw0c,
@@ -94,27 +99,27 @@
         margin-left: 0 !important;
         margin-right: 0 !important;
         padding-left: 40px !important;
-        overflow:hidden !important;
+        overflow: hidden !important;
     }
 
-    #searchform form .A8SBwf{
-        width: 100%!important;
+    #searchform form .A8SBwf {
+        width: 100% !important;
         padding: 0 !important;
         margin-left: 70px !important;
     }
 
-    #appbar{
-        border:none !important;
+    #appbar {
+        border: none !important;
         padding: 0 !important;
-        margin: 0 auto!important;
+        margin: 0 auto !important;
     }
 
-    .IUOThf{
+    .IUOThf {
         width: auto !important;
     }
 
 
-    .rfiSsc.wtAAQb .sBbkle.y3NyWc{
+    .rfiSsc.wtAAQb .sBbkle.y3NyWc {
         padding: 0 !important;
         margin: 0 !important;
         padding-bottom: 5px !important;
@@ -122,12 +127,12 @@
 
     .rfiSsc .sBbkle,
     .rfiSsc.XtQzZd .sBbkle,
-    .rfiSsc.XtQzZd .sBbkle .bSeRjc{
+    .rfiSsc.XtQzZd .sBbkle .bSeRjc {
         padding: 0 !important;
         margin: 0 !important;
     }
 
-    .rfiSsc.wtAAQb *{
+    .rfiSsc.wtAAQb * {
         position: relative !important;
     }
 
@@ -165,14 +170,14 @@
         min-width: 0 !important;
     }
 
-    .kp-wholepage.Jb0Zif{
+    .kp-wholepage.Jb0Zif {
         width: 100% !important;
         max-width: initial !important;
         min-width: 0 !important;
         margin: 10px auto !important;
     }
 
-    .KcXNxb{
+    .KcXNxb {
         background-color: transparent !important;
     }
 
@@ -197,16 +202,14 @@
         padding: 0 10px !important;
     }
 
-
     #rhs>div[aria-label="About"] .xGj8Mb {
         width: auto !important;
         max-width: initial !important;
         min-width: 0 !important;
         margin: 0px !important;
-
     }
 
-    [class="gqLncc card-section KDCVqf"]{
+    [class="gqLncc card-section KDCVqf"] {
         order: -2 !important;
     }
 
@@ -216,7 +219,6 @@
         min-width: 0 !important;
         background-color: var(--acn) !important;
     }
-
 
     .M8OgIe {
         max-width: 100% !important;
@@ -233,48 +235,49 @@
         margin: 10px auto !important;
     }
 
-    .g span{
+    .g span {
         position: relative !important;
     }
 
     #rhs .yTFeqb.wp-ms.oJxARb.nBWfrd.i8qq8b,
     #rhs .TzHB6b.Hwkikb.WY0eLb.LMRCfc.EqrSYc,
     #rhs .TzHB6b.Hwkikb.WY0eLb.yqK6Z,
-    #rhs .KsRP6
-    {
+    #rhs .KsRP6 {
         width: auto !important;
         min-width: initial;
         max-width: 100% !important;
         margin: 0 !important;
-
     }
 
     #rhs .Hwkikb.WY0eLb,
-    #rhs .HdbW6{
+    #rhs .HdbW6 {
         padding: 0 !important;
         width: auto !important;
         border: none !important;
     }
 
-    #rhs.TQc1id.IVvPP.Jb0Zif.rhstc4.yqK6Z{
-        display: flex !important;;
+    #rhs.TQc1id.IVvPP.Jb0Zif.rhstc4.yqK6Z {
+        display: flex !important;
+        ;
         flex-wrap: wrap !important;
         justify-content: space-evenly !important;
         margin: 0 !important;
     }
 
-    #tw-main > div{
+    #tw-main>div {
         width: 100% !important;
     }
 
-    .dG2XIf.Wnoohf.OJXvsb{
+    .dG2XIf.Wnoohf.OJXvsb {
         border: none !important;
         padding: 0 !important;
         margin: 0 !important;
     }
 
+    .g .P1usbc,
+    .g .HiHjCd,
+    .g table.jmjoTe,
     #tw-main,
-    .TzHB6b.cLjAic.LMRCfc,
     .kp-wholepage-osrp.ss6qqb.u7yw9,
     .xpdbox,
     .HdbW6.MjUjnf.VM6qJ,
@@ -283,13 +286,72 @@
     #rhs.TQc1id.IVvPP.Jb0Zif.rhstc4.yqK6Z,
     #rhs .TzHB6b[role="complementary"],
     #rhs [class="kp-wholepage-osrp"],
-    .g
-    {
+    .g:not(:has(.card-section)) {
         margin: 10px auto !important;
-        border: none !important;
+        border: 1px solid #80808038 !important;
         padding: 10px !important;
         background-color: var(--acn) !important;
-        border-radius: 15px !important;
+        border-radius: 10px !important;
+    }
+
+    .g .g {
+        border: none !important;
+        margin: 0 !important;
+        background-color: transparent !important;
+        border-radius: 0 !important;
+    }
+
+    .OOijTb.P6Tjc.gDQYEd {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: space-around !important;
+    }
+
+    .g .HiHjCd {
+        width: fit-content !important;
+        margin: 0 !important;
+        margin-top: 10px !important;
+    }
+
+    .g table.jmjoTe {
+        margin: 0 !important;
+        display: block !important;
+    }
+
+    .g table.jmjoTe tbody {
+        display: flex !important;
+        flex-wrap: wrap !important;
+
+    }
+
+    .g table.jmjoTe tbody>tr {
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 50% !important;
+    }
+
+    .g table.jmjoTe tbody>tr>td {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .g table.jmjoTe tbody>tr div,
+    .g table.jmjoTe tbody>tr td {
+        display: block !important;
+        max-width: 100% !important;
+    }
+
+    .g .P1usbc {
+        display: grid !important;
+        grid-template-columns: 50% 50% !important;
+    }
+
+    .g .P1usbc>div {
+        margin-bottom: 4px !important;
+    }
+
+    .k6DEPe {
+        margin: auto !important;
     }
 
     @media only screen and (max-width: 1024px) {
@@ -297,6 +359,26 @@
             margin: 0 5px !important;
             padding: 0 5px !important;
         }
+
+        .g .P1usbc>div {
+            display: flex !important;
+            flex-wrap: wrap !important;
+        }
+
+        .g .P1usbc .VNLkW .i4vd5e {
+            width: 100% !important;
+        }
     }
 
+    @media only screen and (max-width: 1200px) {
+        .g .P1usbc>div {
+            display: flex !important;
+            flex-wrap: wrap !important;
+        }
+
+        .g .P1usbc .VNLkW .G1Rrjc {
+            padding-left: 0 !important;
+            padding-right: 20px !important;
+        }
+    }
 }
