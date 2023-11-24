@@ -1,0 +1,59 @@
+/* ==UserStyle==
+@name           gmail-clean
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("mail.google.com") {
+
+    tr .bqY
+    {
+        display: none !important;
+    }
+
+    *{
+        transition-property: none !important;
+        transform: none !important;
+        animation: none !important;
+        border-radius: 0 !important;
+    }
+
+    .z0, .aic, [class="T-I T-I-KE L3"]{
+        padding: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        max-width: 240px !important;
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        box-shadow: none !important;
+    }
+
+    [class="T-I T-I-KE L3"]:hover{
+        background-color: gray !important;
+        color: white !important;
+        mix-blend-mode: normal !important;
+    }
+
+    [class="T-I T-I-KE L3"]{
+        padding-left: 8px !important;
+    }
+
+    [id=":3"] tr.zA{
+        font-size: 0.9rem !important;
+        border-radius: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    [id=":3"] tr.zA:hover {
+        box-shadow: none !important;
+        background-color: #ffffff1f !important;
+    }
+
+
+
+
+
+}

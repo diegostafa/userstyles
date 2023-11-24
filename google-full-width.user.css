@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           google-full-width
 @namespace      github.com/diegostafa/userstyles
-@version        1.0.3
+@version        1.0.4
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   default
@@ -9,9 +9,6 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.google.com/search") {
-    * {
-        transform: initial !important;
-    }
 
     body {
         margin: 0 40px !important;
@@ -321,7 +318,6 @@
     .g table.jmjoTe tbody {
         display: flex !important;
         flex-wrap: wrap !important;
-
     }
 
     .g table.jmjoTe tbody>tr {
@@ -342,12 +338,37 @@
     }
 
     .g .P1usbc {
+        margin-bottom: 0 !important;
         display: grid !important;
         grid-template-columns: 50% 50% !important;
     }
 
     .g .P1usbc>div {
         margin-bottom: 4px !important;
+    }
+
+
+    .g h3{
+        font-size: 1.1rem !important;
+        margin-top: 5px !important;
+    }
+
+    .g .H9lube,
+    .g .H9lube *
+    {
+        width: 18px !important;
+        height: 18px !important;
+        background-color: transparent;
+        border:none !important;
+    }
+
+
+    .g div[class="notranslate TbwUpd NJjxre iUh30 ojE3Fb"] > div {
+        display: flex !important;
+    }
+
+    .g div[class="notranslate TbwUpd NJjxre iUh30 ojE3Fb"] > div > span{
+        margin-right: 10px !important;
     }
 
     .k6DEPe {

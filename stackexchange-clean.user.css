@@ -1,9 +1,11 @@
 /* ==UserStyle==
 @name           stackexchange-clean
 @namespace      https://github.com/diegostafa/userstyles
-@version        1.0.2
+@version        1.0.3
 @description    a clean stackexchange UI
 @author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
+@preprocessor   default
+@var            color acn "Accent color" #ffffff0a
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://stackoverflow.com/"),
@@ -12,6 +14,12 @@ url-prefix("https://askubuntu.com/"),
 regexp("https://.*\\.stackexchange\\.com/.*"),
 url-prefix("https://mathoverflow.net/") {
 
+    div {
+        max-width: initial !important;
+    }
+
+    .js-saves-btn,
+    .js-post-issue,
     .js-consent-banner,
     header,
     footer,
@@ -26,22 +34,38 @@ url-prefix("https://mathoverflow.net/") {
         display: none !important;
     }
 
-    body {
+    .container{
+        margin:0 !important;
         padding: 0 !important;
+    }
+
+    body {
+        padding: 0 80px !important;
         margin: 0 !important;
-        background: none !important;
+        background: initial !important;
     }
 
     #content {
-        margin: 0 auto !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: auto !important;
         border: none !important;
-        width: 100% !important;
+        background: initial !important;
+    }
+
+    .d-flex{
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     #mainbar {
-        border: 1px solid #6a6a6a;
+        border: 1px solid #80808038 !important;
+        background-color: var(--acn) !important;
+        border-radius: 10px !important;
         padding: 10px !important;
-        margin: auto !important;
         width: 100%;
     }
 }
