@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        2
+@version        3
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -256,15 +256,18 @@
         position: relative !important;
     }
 
-    #rcnt .M8OgIe [class="WC0BKe"] [class="WvKfwe a3spGf"]>div:not(:empty),
+    #rcnt .M8OgIe [class="WC0BKe"],
+    [class="WvKfwe a3spGf"]>div:not(:empty),
     #rhs>div:not(:empty),
     #bres:not(:empty),
     .WtZO4e>div>div>div:not(:empty),
-    #rso:not(:has(#kp-wp-tab-overview))>div>div:not(:empty) #rso:not(:has(#kp-wp-tab-overview))>.hlcw0c>div:not(:empty),
+    #rso:not(:has(#kp-wp-tab-overview))>div>div:not(:empty),
+    #rso:not(:has(#kp-wp-tab-overview))>.hlcw0c>div:not(:empty),
     #rso #kp-wp-tab-overview>div:not(:empty),
     .g .P1usbc,
     .g .HiHjCd,
-    .g table.jmjoTe {
+    .g table.jmjoTe
+    {
         border: 1px solid #80808036 !important;
         margin: 10px 0 !important;
         padding: 10px !important;
