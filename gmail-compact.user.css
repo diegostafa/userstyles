@@ -1,26 +1,27 @@
 /* ==UserStyle==
-@name           gmail-clean
-@namespace      github.com/openstyles/stylus
-@version        1.0.0
-@description    A new userstyle
-@author         Me
+@name           gmail-compact
+@namespace      github.com/diegostafa/userstyles
+@version        1
+@description    more space, also no round corners
+@author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 ==/UserStyle== */
 
 @-moz-document domain("mail.google.com") {
 
-    tr .bqY
-    {
+    tr .bqY {
         display: none !important;
     }
 
-    *{
+    * {
         transition-property: none !important;
         transform: none !important;
         animation: none !important;
         border-radius: 0 !important;
     }
 
-    .z0, .aic, [class="T-I T-I-KE L3"]{
+    .z0,
+    .aic,
+    [class="T-I T-I-KE L3"] {
         padding: 0 !important;
         width: 100% !important;
         height: auto !important;
@@ -30,17 +31,17 @@
         box-shadow: none !important;
     }
 
-    [class="T-I T-I-KE L3"]:hover{
+    [class="T-I T-I-KE L3"]:hover {
         background-color: gray !important;
         color: white !important;
         mix-blend-mode: normal !important;
     }
 
-    [class="T-I T-I-KE L3"]{
+    [class="T-I T-I-KE L3"] {
         padding-left: 8px !important;
     }
 
-    [id=":3"] tr.zA{
+    [id=":3"] tr.zA {
         font-size: 0.9rem !important;
         border-radius: 0 !important;
         padding-top: 0 !important;
@@ -51,9 +52,4 @@
         box-shadow: none !important;
         background-color: #ffffff1f !important;
     }
-
-
-
-
-
 }

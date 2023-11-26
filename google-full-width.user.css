@@ -1,31 +1,91 @@
 /* ==UserStyle==
-@name           google-full-width
+@name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        1.0.4
+@version        2
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
-@preprocessor   default
-@var            color acn "Accent color" #ffffff06
+@preprocessor   stylus
+@var            color accentColor "Accent color" #ffffff06
+@var            checkbox debug "[DEBUG] show hidden elements" 0
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://www.google.com/search") {
+@-moz-document url-prefix("https://www.google.com/search?q=") {
+
+    #oFNiHe,
+    #sfooter,
+    #rhs .epKdHc,
+    div[style="padding:0px 0 20px"],
+    .ULSxyf:has(> div > .cUnQKe),
+    #bres,
+    #rhs> :empty,
+    #rhs>.focusSentinel,
+    #rhsads,
+    [class="GCSyeb iNlBQe"],
+    .mNh24c,
+    .uzfIAc,
+    .PmPt7d.QprcBd,
+    div[data-st-tgt="stb"],
+    [class="ClPXac Pqkn2e"],
+    [class="ClPXac hoUro Pqkn2e"],
+    .oBa0Fe,
+    [class="Lu1KO aBOYt"] span,
+    .g div[aria-label="About this result"],
+    .g table.jmjoTe tr:has(form),
+    .kno-ftr,
+    .KFFQ0c.xKf9F {
+        if debug {
+            outline: 3px solid red !important;
+        }
+
+        else {
+            display: none !important;
+        }
+    }
 
     body {
-        margin: 0 40px !important;
-        padding: 0 40px !important;
+        margin: 0 !important;
+        padding: 0 60px !important;
         overflow-x: hidden !important;
     }
 
-    .M8OgIe {
-        overflow: scroll !important;
-        scrollbar-width: none;
+    #cnt {
+        padding-top: 10px !important;
     }
 
-    .M8OgIe::-webkit-scrollbar {
+    #taw p {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .M8OgIe:has([class="e8Ck0d CYJS5e"]) {
+        overflow: scroll !important;
+        scrollbar-width: none;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    .M8OgIe:has([class="e8Ck0d CYJS5e"])::-webkit-scrollbar {
         display: none;
     }
 
-    html,
+    .M8OgIe:has([class="e8Ck0d CYJS5e"]) {
+        border: none !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .M8OgIe:has([class="WC0BKe"]) {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    .M8OgIe:has([class="WC0BKe"]) .mheepd {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
     body,
     #rcnt,
     #main,
@@ -36,40 +96,18 @@
         width: auto !important;
     }
 
-    .di8g3.ChOqnd.wY1UTc,
-    .g table.jmjoTe tr:has(form),
-    #sfooter,
-    #taw,
-    [class="TzHB6b cLjAic"]:has(path[d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"]),
-    .ClPXac.Pqkn2e,
-    .g div[aria-label="About this result"],
-    div[aria-label="Watch show"],
-    div[aria-label="Search by voice"],
-    .kno-ftr,
-    .tgqOk,
-    .YPxNKd,
-    .epKdHc,
-    .GCSyeb.iNlBQe,
-    .TzHB6b .oIk2Cb,
-    .TzHB6b.cLjAic:has(.RYdNQb),
-    .TzHB6b.cLjAic:has(.VUsyle),
-    .TzHB6b.cLjAic:has([data-ti="Videos"]),
-    .TzHB6b.cLjAic.LMRCfc:has(g-section-with-header),
-    .ULSxyf .uVMCKf,
-    .ULSxyf .EyBRub,
-    .KFFQ0c.xKf9F,
-    .xtSCL,
-    .sfbg,
-    hr,
-    div[aria-label="People also search for"],
-    .mNh24c,
-    .uzfIAc,
-    .PmPt7d.QprcBd,
-    .cUnQKe,
-    #bres,
-    div[data-st-tgt="stb"],
+    .WZH4jc.w7LJsc {
+        margin: 0 !important;
+    }
+
+
     #sfcnt {
         display: none !important;
+    }
+
+    .obcontainer,
+    [class="dG2XIf ouUsKb"]>div {
+        margin: 0 !important;
     }
 
     .Q3DXx {
@@ -96,7 +134,6 @@
         margin-left: 0 !important;
         margin-right: 0 !important;
         padding-left: 40px !important;
-        overflow: hidden !important;
     }
 
     #searchform form .A8SBwf {
@@ -133,19 +170,53 @@
         position: relative !important;
     }
 
-    #center_col {
-        max-width: initial !important;
+    .dG2XIf.XzTjhb {
+        background-color: transparent !important;
+    }
+
+    #rcnt {
+        justify-content: space-between !important;
+        flex-wrap: no-wrap !important;
+    }
+
+    #rhs {
         min-width: 0 !important;
-        width: 100% !important;
+        max-width: 100% !important;
         margin: 0 !important;
+        flex-grow: 1 !important;
+        height: fit-content !important;
+    }
+
+    #rhs>div {
+        width: auto !important;
+    }
+
+    #rhs div {
+        max-width: 100% !important;
+        min-width: 0 !important;
+        border-left: none !important;
+    }
+
+    #center_col {
         padding: 0 !important;
-        order: 2 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+        flex-grow: 1 !important;
+    }
+
+    #center_col:has(+ #rhs) {
+        margin-right: 10px !important;
+    }
+
+    [class="e8Ck0d CYJS5e"] {
+        margin: 10px auto !important;
+        padding: 0 !important;
+        max-width: initial !important;
     }
 
     .XqFnDf {
         margin: 0 !important;
         padding: 0 !important;
-        order: 1 !important;
         width: 100% !important;
         max-width: initial !important;
         min-width: 0 !important;
@@ -155,71 +226,20 @@
         width: auto !important;
         max-width: initial !important;
         min-width: 0 !important;
-        margin: 10px auto !important;
-    }
-
-    #rhs {
-        margin: 0 !important;
+        margin: 0 auto !important;
         padding: 0 !important;
-        order: 1 !important;
-        width: 100% !important;
-        max-width: initial !important;
-        min-width: 0 !important;
     }
 
-    .kp-wholepage.Jb0Zif {
-        width: 100% !important;
-        max-width: initial !important;
-        min-width: 0 !important;
-        margin: 10px auto !important;
+    .k6DEPe {
+        margin: auto !important;
     }
 
     .KcXNxb {
         background-color: transparent !important;
     }
 
-    #rhs>div[aria-label="About"] {
-        width: auto !important;
-        max-width: initial !important;
-        min-width: 0 !important;
-        margin: 10px auto !important;
-    }
-
-    #rhs>div[aria-label="About"] div.wp-ms {
-        width: auto !important;
-        max-width: initial !important;
-        min-width: 0 !important;
-    }
-
-    #rhs>div[aria-label="About"] div[role="heading"] {
-        width: auto !important;
-        max-width: initial !important;
-        min-width: 0 !important;
-        margin: 0 auto !important;
-        padding: 0 10px !important;
-    }
-
-    #rhs>div[aria-label="About"] .xGj8Mb {
-        width: auto !important;
-        max-width: initial !important;
-        min-width: 0 !important;
-        margin: 0px !important;
-    }
-
     [class="gqLncc card-section KDCVqf"] {
         order: -2 !important;
-    }
-
-    .xpdopen {
-        width: auto !important;
-        max-width: initial !important;
-        min-width: 0 !important;
-        background-color: var(--acn) !important;
-    }
-
-    .M8OgIe {
-        max-width: 100% !important;
-        margin: 0 auto !important;
     }
 
     #kp-wp-tab-overview>div {
@@ -236,59 +256,45 @@
         position: relative !important;
     }
 
-    #rhs .yTFeqb.wp-ms.oJxARb.nBWfrd.i8qq8b,
-    #rhs .TzHB6b.Hwkikb.WY0eLb.LMRCfc.EqrSYc,
-    #rhs .TzHB6b.Hwkikb.WY0eLb.yqK6Z,
-    #rhs .KsRP6 {
-        width: auto !important;
-        min-width: initial;
-        max-width: 100% !important;
-        margin: 0 !important;
-    }
-
-    #rhs .Hwkikb.WY0eLb,
-    #rhs .HdbW6 {
-        padding: 0 !important;
-        width: auto !important;
-        border: none !important;
-    }
-
-    #rhs.TQc1id.IVvPP.Jb0Zif.rhstc4.yqK6Z {
-        display: flex !important;
-        ;
-        flex-wrap: wrap !important;
-        justify-content: space-evenly !important;
-        margin: 0 !important;
-    }
-
-    #tw-main>div {
-        width: 100% !important;
-    }
-
-    .dG2XIf.Wnoohf.OJXvsb {
-        border: none !important;
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-
+    #rcnt .M8OgIe [class="WC0BKe"] [class="WvKfwe a3spGf"]>div:not(:empty),
+    #rhs>div:not(:empty),
+    #bres:not(:empty),
+    .WtZO4e>div>div>div:not(:empty),
+    #rso:not(:has(#kp-wp-tab-overview))>div>div:not(:empty) #rso:not(:has(#kp-wp-tab-overview))>.hlcw0c>div:not(:empty),
+    #rso #kp-wp-tab-overview>div:not(:empty),
     .g .P1usbc,
     .g .HiHjCd,
-    .g table.jmjoTe,
-    #tw-main,
-    .kp-wholepage-osrp.ss6qqb.u7yw9,
-    .xpdbox,
-    .HdbW6.MjUjnf.VM6qJ,
-    #rhs>div[aria-label="About"],
-    #rhs>div[aria-label="About"] .xGj8Mb,
-    #rhs.TQc1id.IVvPP.Jb0Zif.rhstc4.yqK6Z,
-    #rhs .TzHB6b[role="complementary"],
-    #rhs [class="kp-wholepage-osrp"],
-    .g:not(:has(.card-section)) {
-        margin: 10px auto !important;
-        border: 1px solid #80808038 !important;
+    .g table.jmjoTe {
+        border: 1px solid #80808036 !important;
+        margin: 10px 0 !important;
         padding: 10px !important;
-        background-color: var(--acn) !important;
+        background-color: accentColor !important;
         border-radius: 10px !important;
+    }
+
+    #rcnt .M8OgIe [class="WC0BKe"] {
+        margin: 0 !important;
+    }
+
+    .g {
+        margin: 0 !important;
+    }
+
+    .FalWJb,
+    .g,
+    .obcontainer,
+    .obcontainer .dG2XIf.ouUsKb {
+        background-color: transparent !important;
+    }
+
+
+    .WFxqwc.BGdUVb.OTFaAf,
+    #rhs>div[aria-label="About"] .xGj8Mb {
+        margin-bottom: 0 !important;
+    }
+
+    .fl.ellip.oBrLN.ZwRhJd {
+        margin-top: 10px !important;
     }
 
     .g .g {
@@ -310,6 +316,10 @@
         margin-top: 10px !important;
     }
 
+    .g table.jmjoTe h3 a {
+        font-size: 0.9rem !important;
+    }
+
     .g table.jmjoTe {
         margin: 0 !important;
         display: block !important;
@@ -329,6 +339,7 @@
     .g table.jmjoTe tbody>tr>td {
         padding: 0 !important;
         margin: 0 !important;
+        font-size: 0.8rem !important;
     }
 
     .g table.jmjoTe tbody>tr div,
@@ -348,37 +359,73 @@
     }
 
 
-    .g h3{
+    .g h3.LC20lb.MBeuO.DKV0Md {
         font-size: 1.1rem !important;
         margin-top: 5px !important;
     }
 
     .g .H9lube,
-    .g .H9lube *
-    {
+    .g .H9lube * {
         width: 18px !important;
         height: 18px !important;
         background-color: transparent;
-        border:none !important;
+        border: none !important;
     }
 
-
-    .g div[class="notranslate TbwUpd NJjxre iUh30 ojE3Fb"] > div {
+    .g div[class="notranslate TbwUpd NJjxre iUh30 ojE3Fb"]>div {
         display: flex !important;
     }
 
-    .g div[class="notranslate TbwUpd NJjxre iUh30 ojE3Fb"] > div > span{
+    .g div[class="notranslate TbwUpd NJjxre iUh30 ojE3Fb"]>div>span {
         margin-right: 10px !important;
     }
 
-    .k6DEPe {
-        margin: auto !important;
+    @media only screen and (max-width: 1200px) {
+        #center_col:has(+ #rhs) {
+            margin-right: 0 !important;
+        }
+
+        body {
+            padding: 0 40px !important;
+        }
+
+        #rhs {
+            order: -100 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            display: grid !important;
+            grid-gap: 0 5px !important;
+            grid-template-columns: auto auto auto !important;
+        }
+
+        #rhs>div {
+            width: auto !important;
+            padding: 0px !important;
+            margin: 0 !important;
+        }
+
+        #rhs * {
+            font-size: 0.8rem !important;
+        }
+
+        .g .P1usbc>div {
+            display: flex !important;
+            flex-wrap: wrap !important;
+        }
+
+        .g .P1usbc .VNLkW .G1Rrjc {
+            padding-left: 0 !important;
+            padding-right: 20px !important;
+        }
     }
 
     @media only screen and (max-width: 1024px) {
         body {
-            margin: 0 5px !important;
-            padding: 0 5px !important;
+            padding: 0 10px !important;
+        }
+
+        #rhs {
+            grid-template-columns: auto auto !important;
         }
 
         .g .P1usbc>div {
@@ -388,18 +435,6 @@
 
         .g .P1usbc .VNLkW .i4vd5e {
             width: 100% !important;
-        }
-    }
-
-    @media only screen and (max-width: 1200px) {
-        .g .P1usbc>div {
-            display: flex !important;
-            flex-wrap: wrap !important;
-        }
-
-        .g .P1usbc .VNLkW .G1Rrjc {
-            padding-left: 0 !important;
-            padding-right: 20px !important;
         }
     }
 }

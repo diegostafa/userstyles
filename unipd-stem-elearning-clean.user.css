@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           unipd-stem-elearning-clean
 @namespace      https://github.com/diegostafa/userstyles
-@version        1.0.1
+@version        2
 @description    a clean unipd.stem.elearning UI
 @author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
 ==/UserStyle== */
@@ -32,12 +32,33 @@
         transition: none !important;
     }
 
-    header,
+    header.navtop.fixed-top,
     footer,
     nav.navbar .navbar-brand,
     nav.navbar .navbar-toggler,
     .drawer-toggler.drawer-right-toggle {
         display: none !important;
+    }
+
+    .moremenu {
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    #page-header {
+        margin: 0 !important;
+        margin-bottom: 10px !important;
+        padding: 10px !important;
+        text-align: center !important;
+        border-bottom: 1px solid black !important;
+    }
+
+    #page-header * {
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        display: block !important;
     }
 
     nav.navbar {
@@ -59,7 +80,6 @@
         position: fixed !important;
         border-right: 2px solid black !important;
     }
-
 
     .drawer-toggler.drawer-left-toggle {
         top: 0 !important;
