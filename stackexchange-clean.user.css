@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           stackexchange-clean
 @namespace      https://github.com/diegostafa/userstyles
-@version        3
+@version        4
 @description    a clean stackexchange UI
 @author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
 @preprocessor   default
@@ -34,8 +34,8 @@ url-prefix("https://mathoverflow.net/") {
         display: none !important;
     }
 
-    .container {
-        margin: 0 !important;
+    .container{
+        margin:0 !important;
         padding: 0 !important;
     }
 
@@ -46,8 +46,7 @@ url-prefix("https://mathoverflow.net/") {
     }
 
     #content {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        padding: 10px 0 !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
         width: auto !important;
@@ -55,7 +54,7 @@ url-prefix("https://mathoverflow.net/") {
         background: initial !important;
     }
 
-    .d-flex {
+    .d-flex{
         border: none !important;
         padding: 0 !important;
         margin: 0 !important;
