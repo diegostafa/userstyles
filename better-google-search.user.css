@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        3
+@version        4
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -9,7 +9,7 @@
 @var            checkbox debug "[DEBUG] show hidden elements" 0
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://www.google.com/search?q=") {
+@-moz-document url-prefix("https://www.google.com/search") {
 
     #oFNiHe,
     #sfooter,
@@ -57,6 +57,11 @@
         padding: 0 !important;
     }
 
+    .M8OgIe {
+        padding: 0 !important;
+        margin: 0 auto !important;
+    }
+
     .M8OgIe:has([class="e8Ck0d CYJS5e"]) {
         overflow: scroll !important;
         scrollbar-width: none;
@@ -71,19 +76,19 @@
     .M8OgIe:has([class="e8Ck0d CYJS5e"]) {
         border: none !important;
         width: 100% !important;
-        margin: 0 !important;
-        padding: 0 !important;
     }
 
     .M8OgIe:has([class="WC0BKe"]) {
-        margin: 0 !important;
-        padding: 0 !important;
         width: 100% !important;
     }
 
     .M8OgIe:has([class="WC0BKe"]) .mheepd {
         margin: 0 !important;
         padding: 0 !important;
+    }
+
+    #rcnt .M8OgIe [class="WC0BKe"] {
+        flex-wrap: nowrap !important;
     }
 
     body,
@@ -256,7 +261,7 @@
         position: relative !important;
     }
 
-    #rcnt .M8OgIe [class="WC0BKe"],
+    [class="GhpATe pttBJc"] [class="TzHB6b cLjAic LMRCfc"]:has([class="jhtnKe oJxN6"]) #rcnt .M8OgIe [class="WC0BKe"],
     [class="WvKfwe a3spGf"]>div:not(:empty),
     #rhs>div:not(:empty),
     #bres:not(:empty),
@@ -266,13 +271,17 @@
     #rso #kp-wp-tab-overview>div:not(:empty),
     .g .P1usbc,
     .g .HiHjCd,
-    .g table.jmjoTe
-    {
+    .g table.jmjoTe {
         border: 1px solid #80808036 !important;
         margin: 10px 0 !important;
         padding: 10px !important;
         background-color: accentColor !important;
         border-radius: 10px !important;
+    }
+
+    [class="GhpATe pttBJc"] [class="TzHB6b cLjAic"] {
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     #rcnt .M8OgIe [class="WC0BKe"] {
@@ -367,8 +376,7 @@
         margin-top: 5px !important;
     }
 
-    .g .H9lube,
-    .g .H9lube * {
+    #center_col .g .H9lube {
         width: 18px !important;
         height: 18px !important;
         background-color: transparent;

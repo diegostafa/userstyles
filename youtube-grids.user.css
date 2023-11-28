@@ -1,9 +1,11 @@
 /* ==UserStyle==
 @name           youtube-grids
 @namespace      github.com/diegostafa/userstyles
-@version        3
+@version        4
 @description    bigger grids in home, sub feed and search results
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
+@preprocessor   stylus
+@var            checkbox hideGarbage "Hide shorts?" 1
 ==/UserStyle== */
 
 @-moz-document url("https://www.youtube.com/"), url("https://www.youtube.com/feed/subscriptions") {
@@ -54,7 +56,6 @@
     }
 
     ytd-secondary-search-container-renderer,
-    #badges,
     ytd-movie-renderer,
     ytd-menu-renderer,
     ytd-playlist-renderer #list,
@@ -170,5 +171,33 @@
         ytd-video-renderer {
             width: 100% !important;
         }
+    }
+}
+
+@-moz-document url("https://www.youtube.com/feed/subscriptions"), url("https://www.youtube.com/"), url-prefix("https://www.youtube.com/results") {
+    ytd-rich-section-renderer {
+        display: none !important;
+    }
+
+    #video-title {
+        overflow: initial !important;
+        max-height: initial !important;
+    }
+}
+
+@-moz-document domain("youtube.com") {
+
+    if hideShorts {
+
+        ytd-mini-guide-entry-renderer[aria-label="Shorts"],
+        ytd-guide-entry-renderer #endpoint[title="Shorts"],
+        ytd-reel-shelf-renderer {
+            display: none !important;
+        }
+    }
+
+
+    .ytp-popup.ytp-contextmenu {
+        border-radius: 20px !important;
     }
 }

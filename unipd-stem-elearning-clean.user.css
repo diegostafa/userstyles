@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           unipd-stem-elearning-clean
 @namespace      https://github.com/diegostafa/userstyles
-@version        2
+@version        3
 @description    a clean unipd.stem.elearning UI
 @author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
 ==/UserStyle== */
@@ -24,7 +24,13 @@
     }
 }
 
-@-moz-document regexp("https://stem.elearning.unipd.it/course/view.php.*") {
+@-moz-document regexp("https://stem.elearning.unipd.it/mod.*") {
+    #page-header [class="d-flex align-items-center"] {
+        display: none !important;
+    }
+}
+
+@-moz-document regexp("https://stem.elearning.unipd.it/.*") {
 
     * {
         max-height: 100% !important;
@@ -47,18 +53,19 @@
     }
 
     #page-header {
-        margin: 0 !important;
-        margin-bottom: 10px !important;
-        padding: 10px !important;
-        text-align: center !important;
-        border-bottom: 1px solid black !important;
+        margin: 0 auto !important;
+        padding: 5px !important;
+        width: fit-content !important;
+        background-color: #ff000010 !important;
+        border-bottom-left-radius: 10px !important;
+        border-bottom-right-radius: 10px !important;
     }
 
     #page-header * {
         margin: 0 !important;
         padding: 0 !important;
         border: none !important;
-        display: block !important;
+        text-align: center !important;
     }
 
     nav.navbar {
@@ -154,6 +161,10 @@
         border: 4px solid black,
     }
 
+    .secondary-navigation nav {
+        height: fit-content !important;
+    }
+
     div.secondary-navigation,
     nav div.secondary-navigation,
     div.activity-item,
@@ -167,7 +178,40 @@
 
     ul[role=menubar] {
         margin: auto !important;
-        justify-content: space-evenly !important;
+        justify-content: space-between !important;
+    }
+
+    ul.section {
+        padding: 0 40px !important;
+    }
+
+    ul.section>li {
+        background-color: #ffffff08 !important;
+        padding: 2px !important;
+        margin: 0 !important;
+    }
+
+    span.local_bfaltformat-button_span,
+    span.local_bfaltformat-button_span>button {
+        all: initial !important;
+        margin: auto !important;
+        width: 20px !important;
+        height: 20px !important;
+        margin-left: 5px !important;
+    }
+
+    li .activityiconcontainer {
+        max-height: 20px !important;
+        max-width: 20px !important;
+        padding: 0 !important;
+        margin: auto !important;
+        margin-right: 5px !important;
+    }
+
+    li .activityiconcontainer img {
+        max-height: 16px !important;
+        max-width: 16px !important;
+
     }
 
     div[role=main] {
@@ -182,16 +226,8 @@
     }
 
     li.activity {
-        margin: 10px !important;
+        margin: 2px 0 !important;
         padding: 0 !important;
-    }
-
-    li.activity .courseicon {
-        height: 32px !important;
-        width: 32px !important;
-        border: 3px solid #9c0014 !important;
-        background-color: black !important;
-        border-radius: 50%;
     }
 
     li.section.course-section {
@@ -205,9 +241,14 @@
         padding: 0 !important;
     }
 
-    @media (max-width: 800px) {
+    #page {
+        padding: 0 80px !important;
+    }
+
+
+    @media (max-width: 1024px) {
         #page {
-            padding: 10px !important;
+            padding: 0 !important;
         }
     }
 }
