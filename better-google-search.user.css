@@ -57,9 +57,10 @@
         padding: 0 !important;
     }
 
-    .M8OgIe {
+    .M8OgIe{
         padding: 0 !important;
         margin: 0 auto !important;
+        width: 100% !important;
     }
 
     .M8OgIe:has([class="e8Ck0d CYJS5e"]) {
@@ -69,22 +70,12 @@
         margin: 0 auto !important;
     }
 
+    .M8OgIe .p0tlZe{
+        outline: none !important;
+    }
+
     .M8OgIe:has([class="e8Ck0d CYJS5e"])::-webkit-scrollbar {
         display: none;
-    }
-
-    .M8OgIe:has([class="e8Ck0d CYJS5e"]) {
-        border: none !important;
-        width: 100% !important;
-    }
-
-    .M8OgIe:has([class="WC0BKe"]) {
-        width: 100% !important;
-    }
-
-    .M8OgIe:has([class="WC0BKe"]) .mheepd {
-        margin: 0 !important;
-        padding: 0 !important;
     }
 
     #rcnt .M8OgIe [class="WC0BKe"] {
@@ -95,7 +86,7 @@
     #rcnt,
     #main,
     .LHJvCe,
-    #searchform *:not(span):not(a) {
+    #searchform *:not(span):not(a):not(div:has(>iframe)):not(div:has(>iframe) *) {
         max-width: 100% !important;
         min-width: 0 !important;
         width: auto !important;
@@ -257,11 +248,8 @@
         margin: 10px auto !important;
     }
 
-    .g span {
-        position: relative !important;
-    }
-
-    [class="GhpATe pttBJc"] [class="TzHB6b cLjAic LMRCfc"]:has([class="jhtnKe oJxN6"]) #rcnt .M8OgIe [class="WC0BKe"],
+    #botstuff .mnr-c,
+    #rcnt > .M8OgIe,
     [class="WvKfwe a3spGf"]>div:not(:empty),
     #rhs>div:not(:empty),
     #bres:not(:empty),
@@ -271,7 +259,8 @@
     #rso #kp-wp-tab-overview>div:not(:empty),
     .g .P1usbc,
     .g .HiHjCd,
-    .g table.jmjoTe {
+    .g table.jmjoTe
+    {
         border: 1px solid #80808036 !important;
         margin: 10px 0 !important;
         padding: 10px !important;
@@ -279,12 +268,9 @@
         border-radius: 10px !important;
     }
 
-    [class="GhpATe pttBJc"] [class="TzHB6b cLjAic"] {
+    [class="GhpATe pttBJc"]  [class="TzHB6b cLjAic"]
+    {
         padding: 0 !important;
-        margin: 0 !important;
-    }
-
-    #rcnt .M8OgIe [class="WC0BKe"] {
         margin: 0 !important;
     }
 
@@ -376,7 +362,7 @@
         margin-top: 5px !important;
     }
 
-    #center_col .g .H9lube {
+    #center_col .g .H9lube{
         width: 18px !important;
         height: 18px !important;
         background-color: transparent;

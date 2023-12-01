@@ -1,9 +1,11 @@
 /* ==UserStyle==
 @name           old-reddit-theme-modified
 @namespace      https://github.com/diegostafa/userstyles
-@version        3
+@version        4
 @description    a clean old.reddit theme
 @author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
+@preprocessor   stylus
+@var            color borderColor "Border color" #80808050
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.reddit.com/") {
@@ -46,13 +48,12 @@
 
     .content {
         margin: 12px !important;
-        ;
         background-color: transparent !important;
         padding: 0 !important;
     }
 }
 
-@-moz-document regexp("https://(old|www).reddit.com/(|\\?.*)(|r/[0-9A-Za-z]*/)(|search.*|hot|new|rising|controversial|top|top/.*)/?"), regexp("https://(old|www).reddit.com/([0-9A-Za-z]*/)?") {
+@-moz-document regexp("https://(old|www).reddit.com/(|\\?.*)(|r/[0-9A-Za-z]*/)(|search.*|hot|new|rising|controversial|top|top/.*)/?"), regexp("https://(old|www).reddit.com/([0-9A-Za-z]*/)?"), regexp("https://(old|www).reddit.com/domain/.*") {
 
     .expando-button {
         display: none !important;
@@ -90,7 +91,7 @@
         padding: 8px !important;
         width: 18% !important;
         border-radius: 8px !important;
-        border: 1px solid #505050;
+        border: 1px solid borderColor;
     }
 
     .thing * {
@@ -192,7 +193,7 @@
         display: block !important;
         text-align: center !important;
         border-radius: 8px !important;
-        border: 1px solid #505050 !important;
+        border: 1px solid borderColor !important;
     }
 
     @media only screen and (max-width: 1367px) {
@@ -235,7 +236,6 @@
     .menuarea {
         margin: 4px 0 !important;
         padding: 4px !important;
-        border: 1px solid #444444 !important;
         width: fit-content !important;
     }
 
@@ -265,7 +265,6 @@
     .comment {
         border: 1px solid #444444 !important;
         margin: 4px 0 !important;
-        ;
         padding: 8px !important;
     }
 
