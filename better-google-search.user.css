@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        4
+@version        5
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -367,16 +367,19 @@
         border: none !important;
     }
 
+    .GTRloc,
     .CA5RN {
         display: flex !important;
     }
 
+    .GTRloc *.
     .CA5RN * {
         padding: 0 !important;
         margin: 0 !important;
         line-height: initial !important;
     }
 
+    .GTRloc>.VuuXrf
     .CA5RN>.VuuXrf {
         margin-right: 10px !important;
     }

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           old-reddit-theme-modified
 @namespace      https://github.com/diegostafa/userstyles
-@version        4
+@version        5
 @description    a clean old.reddit theme
 @author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
 @preprocessor   stylus
@@ -53,7 +53,7 @@
     }
 }
 
-@-moz-document regexp("https://(old|www).reddit.com/(|\\?.*)(|r/[0-9A-Za-z]*/)(|search.*|hot|new|rising|controversial|top|top/.*)/?"), regexp("https://(old|www).reddit.com/([0-9A-Za-z]*/)?"), regexp("https://(old|www).reddit.com/domain/.*") {
+@-moz-document regexp("https://(old|www).reddit.com/"), regexp("https://(old|www).reddit.com/(r/)?[^/]+/"), regexp("https://(old|www).reddit.com/r/[^/]+/[^/]+/") {
 
     .expando-button {
         display: none !important;
