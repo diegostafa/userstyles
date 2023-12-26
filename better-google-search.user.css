@@ -131,7 +131,7 @@
         height: 28px !important;
     }
 
-    .rfiSsc *:not(style):not(g-popup):not(g-popup *){
+    .rfiSsc *:not(style):not(g-popup):not(g-popup *) {
         height: 20px !important;
         max-height: fit-content !important;
     }
@@ -140,12 +140,12 @@
         line-height: 25px !important;
     }
 
-    .bSeRjc{
+    .bSeRjc {
         line-height: 0 !important;
-        all:initial !important;
+        all: initial !important;
     }
 
-    #abss-dropdown_1 g-dropdown-button{
+    #abss-dropdown_1 g-dropdown-button {
         padding: 0 !important;
     }
 
@@ -161,7 +161,8 @@
         padding-top: 10px !important;
     }
 
-    #searchform, #searchform *:not(#gb *):not([class="UUbT9 EyBRub"] *){
+    #searchform,
+    #searchform *:not(#gb *):not([class="UUbT9 EyBRub"] *) {
         min-height: 0px !important;
         line-height: initial !important;
         border: none !important;
@@ -169,50 +170,53 @@
 
     }
 
-    [class="UUbT9 EyBRub"]{
+    [class="UUbT9 EyBRub"] {
         border-radius: 10px !important;
 
     }
 
-    .RNNXgb{
+    .RNNXgb {
         border-radius: 10px !important;
     }
 
-    #searchform #tsf{
+    #searchform #tsf {
         flex: 1 !important;
         max-width: 50% !important;
 
     }
 
-    #searchform .dRYYxd, #searchform .dRYYxd *{
+    #searchform .dRYYxd,
+    #searchform .dRYYxd * {
         padding: 0 2px !important;
         margin: auto !important;
     }
 
-    #searchform .dRYYxd{
+    #searchform .dRYYxd {
         background-color: accentColor !important;
         border-radius: 10px !important;
     }
 
-    #searchform .dRYYxd svg, #searchform .Tg7LZd svg{
+    #searchform .dRYYxd svg,
+    #searchform .Tg7LZd svg {
         height: 20px !important;
         padding: 0 !important;
     }
 
-    #searchform .Tg7LZd{
+    #searchform .Tg7LZd {
         padding: 5px !important;
         margin: 0 !important;
     }
 
-    .logo{
+    .logo {
         top: -5px !important;
     }
 
-    .RNNXgb, .RNNXgb * {
+    .RNNXgb,
+    .RNNXgb * {
         width: 100% !important;
     }
 
-    #searchform .SDkEP{
+    #searchform .SDkEP {
         padding: 0 !important;
         padding-left: 10px !important;
     }
@@ -457,15 +461,14 @@
         display: flex !important;
     }
 
-    .GTRloc *.
+    .GTRloc *,
     .CA5RN * {
         padding: 0 !important;
         margin: 0 !important;
         line-height: initial !important;
     }
 
-    .GTRloc>.VuuXrf
-    .CA5RN>.VuuXrf {
+    .GTRloc>.VuuXrf .CA5RN>.VuuXrf {
         margin-right: 10px !important;
     }
 
