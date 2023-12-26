@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        5
+@version        6
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -11,6 +11,12 @@
 
 @-moz-document url-prefix("https://www.google.com/search") {
 
+    #searchform [class="UUbT9 EyBRub"] .ynRric,
+    #searchform [class="UUbT9 EyBRub"] .lh87ke,
+    #searchform .xtSCL:empty,
+    #searchform .ACRAdd.M2vV3,
+    #searchform .iblpc,
+    .IDFSOe,
     #oFNiHe,
     #sfooter,
     #rhs .epKdHc,
@@ -121,15 +127,94 @@
         margin-bottom: 0 !important;
     }
 
+    #extabar {
+        height: 28px !important;
+    }
+
+    .rfiSsc *:not(style):not(g-popup):not(g-popup *){
+        height: 20px !important;
+        max-height: fit-content !important;
+    }
+
+    #hdtb-tls {
+        line-height: 25px !important;
+    }
+
+    .bSeRjc{
+        line-height: 0 !important;
+        all:initial !important;
+    }
+
+    #abss-dropdown_1 g-dropdown-button{
+        padding: 0 !important;
+    }
+
     #searchform {
         position: initial !important;
-        margin-top: 10px !important;
+        margin: 0 !important;
         min-width: 0 !important;
         max-width: 100% !important;
         width: auto !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
         padding-left: 40px !important;
+        padding-top: 10px !important;
+    }
+
+    #searchform, #searchform *:not(#gb *):not([class="UUbT9 EyBRub"] *){
+        min-height: 0px !important;
+        line-height: initial !important;
+        border: none !important;
+        max-height: 32px !important;
+
+    }
+
+    [class="UUbT9 EyBRub"]{
+        border-radius: 10px !important;
+
+    }
+
+    .RNNXgb{
+        border-radius: 10px !important;
+    }
+
+    #searchform #tsf{
+        flex: 1 !important;
+        max-width: 50% !important;
+
+    }
+
+    #searchform .dRYYxd, #searchform .dRYYxd *{
+        padding: 0 2px !important;
+        margin: auto !important;
+    }
+
+    #searchform .dRYYxd{
+        background-color: accentColor !important;
+        border-radius: 10px !important;
+    }
+
+    #searchform .dRYYxd svg, #searchform .Tg7LZd svg{
+        height: 20px !important;
+        padding: 0 !important;
+    }
+
+    #searchform .Tg7LZd{
+        padding: 5px !important;
+        margin: 0 !important;
+    }
+
+    .logo{
+        top: -5px !important;
+    }
+
+    .RNNXgb, .RNNXgb * {
+        width: 100% !important;
+    }
+
+    #searchform .SDkEP{
+        padding: 0 !important;
+        padding-left: 10px !important;
     }
 
     #searchform form .A8SBwf {
