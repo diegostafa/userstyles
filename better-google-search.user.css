@@ -1,16 +1,18 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        6
+@version        7
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
-@var            color accentColor "Accent color" #ffffff06
+@var            text borderRadius "border radius?" "10px"
+@var            color accentColor "accent color" #ffffff06
 @var            checkbox debug "[DEBUG] show hidden elements" 0
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://www.google.com/search") {
+@-moz-document regexp("https://www.google.com/search(?!.*\\&tbm\\=).*") {
 
+    [class="bNg8Rb OhScic zsYMMe BBwThe"],
     #searchform [class="UUbT9 EyBRub"] .ynRric,
     #searchform [class="UUbT9 EyBRub"] .lh87ke,
     #searchform .xtSCL:empty,
@@ -170,11 +172,11 @@
     }
 
     [class="UUbT9 EyBRub"] {
-        border-radius: 10px !important;
+        border-radius: borderRadius !important;
     }
 
     .RNNXgb {
-        border-radius: 10px !important;
+        border-radius: borderRadius !important;
     }
 
     #searchform #tsf {
@@ -190,7 +192,7 @@
 
     #searchform .dRYYxd {
         background-color: accentColor !important;
-        border-radius: 10px !important;
+        border-radius: borderRadius !important;
     }
 
     #searchform .dRYYxd svg,
@@ -333,6 +335,7 @@
         margin: 10px auto !important;
     }
 
+    #rcnt>.XqFnDf,
     #botstuff .mnr-c,
     #rcnt>.M8OgIe,
     [class="WvKfwe a3spGf"]>div:not(:empty),
@@ -349,7 +352,7 @@
         margin: 10px 0 !important;
         padding: 10px !important;
         background-color: accentColor !important;
-        border-radius: 10px !important;
+        border-radius: borderRadius !important;
     }
 
     [class="GhpATe pttBJc"] [class="TzHB6b cLjAic"] {
@@ -361,6 +364,7 @@
         margin: 0 !important;
     }
 
+    .Ww4FFb.vt6azd,
     .wDYxhc .dG2XIf.ouUsKb,
     .FalWJb,
     .g,

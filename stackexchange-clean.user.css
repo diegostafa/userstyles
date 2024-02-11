@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           stackexchange-clean
 @namespace      https://github.com/diegostafa/userstyles
-@version        4
+@version        5
 @description    a clean stackexchange UI
 @author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
 @preprocessor   default
@@ -12,12 +12,13 @@
 url-prefix("https://superuser.com/"),
 url-prefix("https://askubuntu.com/"),
 regexp("https://.*\\.stackexchange\\.com/.*"),
-url-prefix("https://mathoverflow.net/") {
+url-prefix("https://mathoverflow.net/"), url-prefix("https://serverfault.com/") {
 
     div {
         max-width: initial !important;
     }
 
+    #onetrust-consent-sdk,
     .js-saves-btn,
     .js-post-issue,
     .js-consent-banner,
@@ -34,9 +35,10 @@ url-prefix("https://mathoverflow.net/") {
         display: none !important;
     }
 
-    .container {
-        margin: 0 !important;
+    .container{
+        margin:0 !important;
         padding: 0 !important;
+        width: 100% !important;
     }
 
     body {
@@ -49,12 +51,12 @@ url-prefix("https://mathoverflow.net/") {
         padding: 10px 0 !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
-        width: auto !important;
+        width: 100% !important;
         border: none !important;
         background: initial !important;
     }
 
-    .d-flex {
+    .d-flex{
         border: none !important;
         padding: 0 !important;
         margin: 0 !important;

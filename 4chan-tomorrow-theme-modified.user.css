@@ -1,14 +1,21 @@
 /* ==UserStyle==
 @name           4chan-tomorrow-theme-modified
 @namespace      github.com/diegostafa/userstyles
-@version        4
+@version        6
 @description    a clean tomorrow theme
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
-@var            checkbox autoUpdater "Hide refresh icon (thread watcher)?" 0
+@var            color accentColor "accent color" #458588
+@var            checkbox hideRefreshTW "Hide refresh icon (thread watcher)?" 0
+@var            checkbox hideAutoUpdateCB "Hide bottom auto update checkbox?" 0
 ==/UserStyle== */
 
 @-moz-document regexp("https?://(www\\.)?4chan(nel)?\\.org/.*") {
+
+    * {
+        color: #eeffff !important;
+        background-color: #1d2021 !important;
+    }
 
     html:has(.zone-name-title) * {
         margin: 0 !important;
@@ -16,15 +23,14 @@
         background-color: #1d2021 !important;
     }
 
-    * {
-        color: #eeffff !important;
-        background-color: #2c2c2c !important;
-    }
-
     #boards {
         vertical-align: middle;
         font-family: 'liberation sans' !important;
         font-weight: 300;
+    }
+
+    #bd *{
+        background-color: #2c2c2c !important;
     }
 
     #logo-fp,
@@ -56,7 +62,7 @@
         padding: 0;
         width: 100%;
         min-width: auto;
-        background-color: #2c2c2c !important;
+        background-color: #1d2021 !important;
     }
 
     .boxcontent {
@@ -96,12 +102,12 @@
 
     a:link,
     a:visited {
-        color: #458588 !important;
+        color: accentColor !important;
     }
 
     a:hover,
     a:active {
-        color: #458588 !important;
+        color: accentColor !important;
     }
 
     .deadlink {
@@ -154,11 +160,18 @@
         display: none !important;
     }
 
-    if autoUpdater {
+    if hideRefreshTW {
         #twPrune {
             display: none !important;
         }
     }
+
+    if hideAutoUpdateCB {
+        .navLinksBot label{
+            display: none
+        }
+    }
+
 
     /* new post*/
     #postForm {
@@ -200,7 +213,7 @@
         padding: 0 !important;
         min-width: 360px !important;
         min-height: 100px !important;
-        -webkit-box-sizing: content-box !important;
+        box-sizing: content-box !important;
     }
 
     #postForm tbody tr[data-type=Subject] td input[type=submit] {
@@ -210,6 +223,10 @@
         background-color: #1d2021 !important;
         font-size: 11px !important;
         font-family: 'liberation mono' !important;
+    }
+
+    #t-root:has(iframe){
+        width: fit-content !important;
     }
 
     #t-root {
@@ -255,7 +272,7 @@
     }
 
     #togglePostFormLink {
-        color: #458588 !important;
+        color: accentColor !important;
         font-size: 14px !important;
         font-weight: 400 !important;
     }
@@ -274,7 +291,7 @@
     /* thread watcher */
     #threadWatcher {
         margin: 0 !important;
-        border: 1px solid #458588 !important;
+        border: 1px solid accentColor !important;
         background-color: #282828 !important;
         max-height: 300px !important;
     }
@@ -404,7 +421,7 @@
 
     /* quick reply */
     #quickReply {
-        border: 1px solid #458588 !important;
+        border: 1px solid accentColor !important;
         margin: 0 !important;
         overflow: hidden !important;
         background-color: #222222 !important;
@@ -437,7 +454,7 @@
         padding: 0 !important;
         min-width: 360px !important;
         min-height: 100px !important;
-        -webkit-box-sizing: content-box !important;
+        box-sizing: content-box !important;
     }
 
     #qrCaptchaContainer {
@@ -446,6 +463,10 @@
         padding: 0 !important;
         min-height: fit-content !important;
         background-color: #1d2021 !important;
+    }
+
+    #qrCaptchaContainer:has(iframe){
+        width: auto !important;
     }
 
     #t-load {

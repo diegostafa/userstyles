@@ -188,7 +188,6 @@
 @-moz-document domain("youtube.com") {
 
     if hideShorts {
-
         ytd-mini-guide-entry-renderer[aria-label="Shorts"],
         ytd-guide-entry-renderer #endpoint[title="Shorts"],
         ytd-reel-shelf-renderer {

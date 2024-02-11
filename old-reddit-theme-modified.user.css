@@ -6,8 +6,9 @@
 @author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
 @preprocessor   stylus
 @var            color borderColor "Border color" #80808050
-@var            color bgColor "Accent color" #ffffff0a
-@var            color titleColor "Accent color" #dddddd
+@var            color bgColor "Background color" #ffffff0a
+@var            color titleColor "Title color" #dddddd
+@var            checkbox hideUpvote "Hide upvote buttons" 0
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.reddit.com/") {
@@ -21,7 +22,6 @@
 @-moz-document url-prefix("https://www.reddit.com/"), url-prefix("https://old.reddit.com/") {
 
     .seo-comments-recommendations,
-    .midcol,
     #eu-cookie-policy,
     .infobar.commentsignupbar,
     .side,
@@ -38,6 +38,11 @@
         display: none !important;
     }
 
+    if hideUpvote {
+        .midcol {
+            display: none !important;
+        }
+    }
 
     body,
     html {
@@ -169,6 +174,7 @@
 
     .thing .entry {
         height: 100% !important;
+        background-color: transparent !important;
     }
 
     .thing .top-matter {
