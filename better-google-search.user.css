@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        7
+@version        8
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -278,6 +278,8 @@
         max-width: 100% !important;
         min-width: 0 !important;
         border-left: none !important;
+        margin-left: initial !important;
+        margin-right: initial !important;
     }
 
     #center_col {
