@@ -1,0 +1,93 @@
+/* ==UserStyle==
+@name           overleaf-clean
+@namespace      https://github.com/diegostafa/userstyles
+@version        1
+@description    a clean overleaf UI
+@author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
+@preprocessor   stylus
+@var            text editorFont "Editor font" "Jetbrains mono"
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.overleaf.com/project") {
+
+    .cm-content, .editor-sidebar {
+        font-family: editorFont !important;
+    }
+
+    .toolbar-header, .toolbar-header *:not(ul), .toolbar, .toolbar *:not(ul) {
+        max-height: 1rem !important;
+        font-size: 0.7rem !important;
+        font-weight: normal !important;
+        text-transform: lowercase !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        line-height: 0 !important;
+    }
+
+    .editor-sidebar *{
+        font-size: 0.6rem !important;
+    }
+
+    .entity *, .entity *::before{
+        height: 1.2rem !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        line-height: 0 !important;
+    }
+
+    .outline-container *{
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin: 0 !important;
+    }
+
+    .outline-item-expand-collapse-btn{
+        width: 1rem !important;
+    }
+
+    .outline-container .outline-item-row {
+        max-height: 1rem !important;
+    }
+
+    .dropdown-menu li, .dropdown-menu a {
+        margin: 0 !important;
+        font-size: 0.7rem !important;
+    }
+
+    .pdf-viewer{
+        top: 1rem !important;
+    }
+
+    #ide-body{
+        top: 1rem !important;
+    }
+
+    .btn, i{
+        font-size: 0.7rem !important;
+    }
+
+    .cm-gutters, .cm-gutters *{
+        min-width: 0 !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        width: fit-content !important;
+    }
+
+    .cm-activeLineGutter{
+        background-color: transparent !important;
+        color: blue !important;
+    }
+
+    .cm-lint-marker{
+        font-size: 0.5rem !important;
+    }
+
+    .entity-menu-toggle,
+    .synctex-controls,
+    .toolbar-filetree,
+    .review-icon,
+    .toolbar-header-upgrade-prompt,
+    .cm-panels-top{
+        display: none !important;
+    }
+}
