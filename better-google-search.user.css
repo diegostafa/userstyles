@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        8
+@version        9
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -12,7 +12,9 @@
 
 @-moz-document regexp("https://www.google.com/search(?!.*\\&tbm\\=).*") {
 
+    .rfiSsc [class="ym1pid zo4mKb KLEmSd"],
     [class="bNg8Rb OhScic zsYMMe BBwThe"],
+    #searchform [class="MG7lrf mWcf0e"],
     #searchform [class="UUbT9 EyBRub"] .ynRric,
     #searchform [class="UUbT9 EyBRub"] .lh87ke,
     #searchform .xtSCL:empty,
@@ -128,16 +130,6 @@
         margin-bottom: 0 !important;
     }
 
-    #extabar {
-        height: fir-content !important;
-        max-height: fir-content !important;
-    }
-
-    .rfiSsc *:not(style):not(g-popup):not(g-popup *) {
-        height: 20px !important;
-        max-height: fit-content !important;
-    }
-
     #hdtb-tls {
         line-height: 25px !important;
     }
@@ -145,6 +137,16 @@
     .bSeRjc {
         line-height: 0 !important;
         all: initial !important;
+    }
+
+    #tools_1{
+        margin-top: 5px !important;
+    }
+
+    .SF7xd{
+        margin: 0 !important;
+        padding: 0 !important;
+        display: initial !important;
     }
 
     #abss-dropdown_1 g-dropdown-button {
@@ -226,7 +228,16 @@
         margin-left: 70px !important;
     }
 
+    #extabar {
+        height: fir-content !important;
+        max-height: fir-content !important;
+        margin-top: 15px !important;
+
+    }
+
+    #slim_appbar,
     #appbar {
+        display: block !important;
         border: none !important;
         padding: 0 !important;
         margin: 0 auto !important;
@@ -247,10 +258,6 @@
     .rfiSsc.XtQzZd .sBbkle .bSeRjc {
         padding: 0 !important;
         margin: 0 !important;
-    }
-
-    .rfiSsc.wtAAQb * {
-        position: relative !important;
     }
 
     .dG2XIf.XzTjhb {
@@ -337,6 +344,7 @@
         margin: 10px auto !important;
     }
 
+    block-component > * > [class="dG2XIf Wnoohf OJXvsb"],
     #rcnt>.XqFnDf,
     #botstuff .mnr-c,
     #rcnt>.M8OgIe,
@@ -521,7 +529,7 @@
         }
 
         .g .P1usbc .VNLkW .G1Rrjc {
-            padding-left: 0 !important;
+            padding-left: 5px !important;
             padding-right: 20px !important;
         }
     }
