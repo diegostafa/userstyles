@@ -1,11 +1,13 @@
 /* ==UserStyle==
 @name           youtube-grids
 @namespace      github.com/diegostafa/userstyles
-@version        6
+@version        7
 @description    bigger grids in home, sub feed and search results
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
 @var            checkbox hideGarbage "Hide shorts?" 1
+@var            checkbox hideEmojiMessage "Hide messages containing emojis in livechat?" 1
+@var            checkbox betterLiveChat "Shorter livechat, less clutter?" 1
 ==/UserStyle== */
 
 @-moz-document url("https://www.youtube.com/"), url("https://www.youtube.com/feed/subscriptions") {
@@ -193,6 +195,24 @@
         ytd-guide-entry-renderer #endpoint[title="Shorts"],
         ytd-reel-shelf-renderer {
             display: none !important;
+        }
+    }
+
+    if hideEmojiMessage {
+        yt-live-chat-text-message-renderer:has(img.emoji) {
+            display: none !important;
+        }
+    }
+
+    if betterLiveChat {
+        yt-live-chat-app tp-yt-iron-dropdown:has(#items),
+        yt-live-chat-text-message-renderer #menu,
+        #author-photo {
+            display: none !important;
+        }
+
+        #chat {
+            min-height: 0 !important;
         }
     }
 

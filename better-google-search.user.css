@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        9
+@version        10
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -344,6 +344,7 @@
         margin: 10px auto !important;
     }
 
+    #kp-wp-tab-BookGet > div
     block-component > * > [class="dG2XIf Wnoohf OJXvsb"],
     #rcnt>.XqFnDf,
     #botstuff .mnr-c,
@@ -374,6 +375,7 @@
         margin: 0 !important;
     }
 
+    [role="tabpanel"] [class="g Ww4FFb vt6azd tF2Cxc asEBEc"] *,
     .Ww4FFb.vt6azd,
     .wDYxhc .dG2XIf.ouUsKb,
     .FalWJb,
@@ -478,8 +480,7 @@
         line-height: initial !important;
     }
 
-    .GTRloc>.VuuXrf,
-    .CA5RN>.VuuXrf {
+    .VuuXrf {
         margin-right: 10px !important;
     }
 
