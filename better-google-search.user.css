@@ -344,7 +344,8 @@
         margin: 10px auto !important;
     }
 
-    #kp-wp-tab-BookGet > div
+    #kp-wp-tab-TvmWatch > div:not(:empty),
+    #kp-wp-tab-BookGet > div:not(:empty),
     block-component > * > [class="dG2XIf Wnoohf OJXvsb"],
     #rcnt>.XqFnDf,
     #botstuff .mnr-c,
