@@ -12,6 +12,10 @@
 
 @-moz-document regexp("https://www.google.com/search(?!.*\\&tbm\\=).*") {
 
+    * {
+        box-shadow: none !important;
+    }
+
     .ULSxyf:has(.Ww4FFb.vt6azd:empty),
     .rfiSsc [class="ym1pid zo4mKb KLEmSd"],
     [class="bNg8Rb OhScic zsYMMe BBwThe"],
@@ -136,14 +140,8 @@
         all: initial !important;
     }
 
-    #tools_1{
-        margin-top: 5px !important;
-    }
-
-    .SF7xd{
-        margin: 0 !important;
-        padding: 0 !important;
-        display: initial !important;
+    #cnt {
+        padding-top: 4px !important;
     }
 
     #abss-dropdown_1 g-dropdown-button {
@@ -182,6 +180,13 @@
 
     [class="UUbT9 EyBRub"] {
         border-radius: borderRadius !important;
+    }
+
+    .PHj8of,
+    .PHj8of * {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+
     }
 
     .RNNXgb {
@@ -279,6 +284,9 @@
     .dG2XIf.XzTjhb {
         background-color: transparent !important;
     }
+
+
+
 
     #rcnt {
         justify-content: space-between !important;
