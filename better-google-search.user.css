@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        10
+@version        11
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -12,6 +12,7 @@
 
 @-moz-document regexp("https://www.google.com/search(?!.*\\&tbm\\=).*") {
 
+    .ULSxyf:has(.Ww4FFb.vt6azd:empty),
     .rfiSsc [class="ym1pid zo4mKb KLEmSd"],
     [class="bNg8Rb OhScic zsYMMe BBwThe"],
     #searchform [class="MG7lrf mWcf0e"],
@@ -56,10 +57,6 @@
         margin: 0 !important;
         padding: 0 60px !important;
         overflow-x: hidden !important;
-    }
-
-    #cnt {
-        padding-top: 10px !important;
     }
 
     #taw p {
@@ -165,6 +162,16 @@
         padding-top: 10px !important;
     }
 
+    #searchform {
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    #tsf + .Q3DXx,
+    #tsf + .Q3DXx * {
+        padding-top: 0 !important;
+    }
+
     #searchform,
     #searchform *:not(#gb *):not(.UUbT9.EyBRub *) {
         min-height: 0px !important;
@@ -235,6 +242,10 @@
 
     }
 
+    .OMqmfd{
+        all: initial !important;
+    }
+
     #slim_appbar,
     #appbar {
         display: block !important;
@@ -245,6 +256,11 @@
 
     .IUOThf {
         width: auto !important;
+    }
+
+    .IUOThf * {
+        padding: initial !important;
+        height: initial !important;
     }
 
     .rfiSsc.wtAAQb .sBbkle.y3NyWc {
