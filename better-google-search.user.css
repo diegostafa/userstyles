@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        11
+@version        13
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -10,12 +10,19 @@
 @var            checkbox debug "[DEBUG] show hidden elements" 0
 ==/UserStyle== */
 
-@-moz-document regexp("https://www.google.com/search(?!.*\\&tbm\\=).*") {
+@-moz-document url-prefix("https://www.google.com/search") {
 
     * {
         box-shadow: none !important;
     }
 
+    #rcnt:has(.wIjY0d.jFk0f) * {
+        max-width: 100% !important;
+    }
+
+    span.LAWljd,
+    span:has(>.zLSRge.w2jn8d),
+    .JryvJ,
     .ULSxyf:has(.Ww4FFb.vt6azd:empty),
     .rfiSsc [class="ym1pid zo4mKb KLEmSd"],
     [class="bNg8Rb OhScic zsYMMe BBwThe"],
@@ -249,6 +256,7 @@
 
     .OMqmfd{
         all: initial !important;
+        font-family: sans !important;
     }
 
     #slim_appbar,
@@ -284,9 +292,6 @@
     .dG2XIf.XzTjhb {
         background-color: transparent !important;
     }
-
-
-
 
     #rcnt {
         justify-content: space-between !important;
@@ -373,7 +378,7 @@
     block-component > * > [class="dG2XIf Wnoohf OJXvsb"],
     #rcnt>.XqFnDf,
     #botstuff .mnr-c,
-    #rcnt>.M8OgIe,
+    #rcnt>.M8OgIe:not(:has(h1[class="bNg8Rb OhScic zsYMMe BBwThe"])),
     [class="WvKfwe a3spGf"]>div:not(:empty),
     #rhs>div:not(:empty),
     #bres:not(:empty),
@@ -509,7 +514,7 @@
         margin-right: 10px !important;
     }
 
-    [class="qLRx3b tjvcx GvPZzd cHaqb"]{
+    .tjvcx.GvPZzd.cHaqb {
         margin-right: 20px !important;
     }
 

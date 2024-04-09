@@ -1,13 +1,11 @@
 /* ==UserStyle==
 @name           old-reddit-theme-modified
 @namespace      https://github.com/diegostafa/userstyles
-@version        6
+@version        7
 @description    a clean old.reddit theme
 @author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
 @preprocessor   stylus
 @var            color borderColor "Border color" #80808050
-@var            color bgColor "Background color" #ffffff0a
-@var            color titleColor "Title color" #dddddd
 @var            checkbox hideUpvote "Hide upvote buttons" 0
 ==/UserStyle== */
 
@@ -55,16 +53,11 @@
 
     .content {
         margin: 12px !important;
-        background-color: transparent !important;
         padding: 0 !important;
     }
 }
 
 @-moz-document regexp("https://(old|www).reddit.com/"), regexp("https://(old|www).reddit.com/(r/)?[^/]+/"), regexp("https://(old|www).reddit.com/r/[^/]+/[^/]+/") {
-
-    body{
-        background-color: #181818 !important;
-    }
 
     .nav-buttons {
         width: 100% !important;
@@ -99,7 +92,6 @@
         width: 18% !important;
         border-radius: 8px !important;
         border: 1px solid borderColor;
-        background-color: bgColor;
     }
 
     .thing * {
@@ -115,13 +107,11 @@
         width: 300px !important;
         position: absolute;
         z-index: 100;
-        background-color: black !important;
     }
 
     .thing .thumbnail,
     .thing .thumbnail img {
         background: none !important;
-        background-color: #3f3f3f !important;
         border-radius: 8px !important;
         height: 60px;
         width: 100% !important;
@@ -140,7 +130,6 @@
         font-size: 1rem !important;
         display: block !important;
         margin: 0 !important;
-        color: titleColor !important;
     }
 
     .thing .title,
@@ -170,7 +159,6 @@
 
     .thing .entry {
         height: 100% !important;
-        background-color: transparent !important;
     }
 
     .thing .top-matter {

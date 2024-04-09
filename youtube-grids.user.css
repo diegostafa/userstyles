@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube-grids
 @namespace      github.com/diegostafa/userstyles
-@version        7
+@version        8
 @description    bigger grids in home, sub feed and search results
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -205,8 +205,8 @@
     }
 
     if betterLiveChat {
-        yt-live-chat-app tp-yt-iron-dropdown:has(#items),
-        yt-live-chat-text-message-renderer #menu,
+        #reaction-control-panel-overlay,
+        yt-live-chat-viewer-engagement-message-renderer,
         #author-photo {
             display: none !important;
         }
