@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        13
+@version        14
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -20,6 +20,7 @@
         max-width: 100% !important;
     }
 
+    [class="WzNHm mWcf0e"]:has([class="VfL2Y LRZwuc"]),
     span.LAWljd,
     span:has(>.zLSRge.w2jn8d),
     .JryvJ,
@@ -183,6 +184,11 @@
         line-height: initial !important;
         border: none !important;
         max-height: 32px !important;
+    }
+
+    .a4bIc textarea {
+        padding-top: initial !important;
+        margin: auto !important;
     }
 
     [class="UUbT9 EyBRub"] {
