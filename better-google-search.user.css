@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        14
+@version        15
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -543,6 +543,7 @@
 
         #rhs {
             order: -100 !important;
+            width: auto !important;
             margin: 0 !important;
             padding: 0 !important;
             display: grid !important;
