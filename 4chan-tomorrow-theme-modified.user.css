@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           4chan-tomorrow-theme-modified
 @namespace      github.com/diegostafa/userstyles
-@version        8
+@version        9
 @description    a clean tomorrow theme
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -253,17 +253,17 @@
         font-family: 'liberation mono' !important;
     }
 
-    #t-root:has(iframe){
-        width: fit-content !important;
-    }
-
     #t-root {
-        width: 100% !important;
         margin: 0 !important;
         padding: 0 !important;
         min-height: fit-content !important;
         background-color: var(--main-bgc) !important;
         border: none !important;
+    }
+
+
+    #t-root:not(:has(iframe)) {
+        width: 100% !important;
     }
 
     #postFile {

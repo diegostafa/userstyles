@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        15
+@version        16
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -12,6 +12,14 @@
 
 @-moz-document url-prefix("https://www.google.com/search") {
 
+    #tU52Vb *{
+        margin-bottom: 0 !important;
+    }
+
+    [class="rfiSsc XtQzZd"] {
+        height: 30px !important;
+    }
+
     * {
         box-shadow: none !important;
     }
@@ -20,6 +28,7 @@
         max-width: 100% !important;
     }
 
+    #slim_appbar:empty,
     [class="WzNHm mWcf0e"]:has([class="VfL2Y LRZwuc"]),
     span.LAWljd,
     span:has(>.zLSRge.w2jn8d),
@@ -324,6 +333,10 @@
         margin-right: initial !important;
     }
 
+    #hdtbMenus {
+        position: relative !important;
+    }
+
     #center_col {
         padding: 0 !important;
         margin: 0 !important;
@@ -379,6 +392,7 @@
         margin: 10px auto !important;
     }
 
+    #tU52Vb > div > div,
     #kp-wp-tab-TvmWatch > div:not(:empty),
     #kp-wp-tab-BookGet > div:not(:empty),
     block-component > * > [class="dG2XIf Wnoohf OJXvsb"],

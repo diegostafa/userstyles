@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           old-reddit-theme-modified
 @namespace      https://github.com/diegostafa/userstyles
-@version        7
+@version        9
 @description    a clean old.reddit theme
 @author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
 @preprocessor   stylus
@@ -270,6 +270,24 @@
         border: 1px solid #444444 !important;
         margin: 4px 0 !important;
         padding: 8px !important;
+        padding-right: 0 !important;
+        margin-right: 0 !Important;
+    }
+
+    .comment .comment {
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+        border-bottom: none !important;
+        border-right: none !important;
+    }
+
+    .comment .comment:not(.collapsed) {
+        padding-bottom: 0 !important;
+    }
+
+    .commentarea > .sitetable > .comment:not(.collapsed) {
+        padding-bottom: 0 !important;
+        margin: 4px 0 !important;
     }
 
     .commentarea>.usertext.cloneable.warn-on-unload {

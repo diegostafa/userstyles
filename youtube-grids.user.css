@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube-grids
 @namespace      github.com/diegostafa/userstyles
-@version        9
+@version        10
 @description    bigger grids in home, sub feed and search results
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -194,7 +194,6 @@
         .ytp-chrome-controls .ytp-size-button,
         .ytp-chrome-controls .ytp-miniplayer-button,
         .ytp-chrome-controls .ytp-next-button,
-        .ytp-chrome-controls .ytp-play-button,
         .ytp-chrome-controls .ytp-prev-button{
             display: none !important;
         }
