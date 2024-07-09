@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube-grids
 @namespace      github.com/diegostafa/userstyles
-@version        10
+@version        11
 @description    bigger grids in home, sub feed and search results
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -185,6 +185,7 @@
     #video-title {
         overflow: initial !important;
         max-height: initial !important;
+        display: block !important;
     }
 }
 

@@ -1,0 +1,57 @@
+/* ==UserStyle==
+@name           ncatlab-clean
+@namespace      github.com/diegostafa/userstyles
+@version        1
+@author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
+==/UserStyle== */
+
+@-moz-document domain("ncatlab.org") {
+    .query:has(#gsearch),
+    #pageName span {
+        display: none !important;
+    }
+
+    .navigation {
+        position: initial !important;
+    }
+
+    #pageName, html, body {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    html, body, div{
+        background-color: #111 !important;
+        color: white !important;
+    }
+
+    p {
+        color: white !important;
+    }
+
+    body body > div:not(:has(math)) {
+        border: 1px solid gray !important;
+    }
+
+    div:has(>math) {
+        padding: 8px 0 !important;
+        border: 1px solid gray !important;
+    }
+
+    div.query {
+        background-color: #333 !important;
+    }
+
+    span.newWikiWord {
+        background-color: #60533b !important;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        color: #9bffff !important;
+        background-color: #111 !important;
+    }
+
+    .navigation a, a {
+        color: #9bfa76 !important;
+    }
+}

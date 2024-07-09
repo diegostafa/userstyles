@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           4chan-tomorrow-theme-modified
 @namespace      github.com/diegostafa/userstyles
-@version        9
+@version        10
 @description    a clean tomorrow theme
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -387,6 +387,10 @@
     .extPanel.reply {
         border: 2px dashed var(--border-color) !important;
         background-color: var(--secondary-bgc) !important;
+    }
+
+    .post.reply:has(.ql-tracked){
+        border: 2px dashed accentColor !important;
     }
 
     .post.reply {
