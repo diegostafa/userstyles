@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           4chan-tomorrow-theme-modified
 @namespace      github.com/diegostafa/userstyles
-@version        10
+@version        12
 @description    a clean tomorrow theme
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -16,6 +16,7 @@
         --secondary-bgc: #f4f4f4 !important;
         --text-color: black !important;
         --border-color: #ababab !important;
+        --you-reply: red !important;
     }
 }
 
@@ -25,6 +26,7 @@
         --secondary-bgc: #282828 !important;
         --text-color: #dfdfdf !important;
         --border-color: #4b4b4b !important;
+        --you-reply: #c4ae00 !important;
     }
 }
 
@@ -153,6 +155,8 @@
         outline: none !important;
     }
 
+    #save-captcha,
+    label[for="save-captcha"],
     .danbo-slot,
     #js-snowfield,
     .sideArrows,
@@ -328,6 +332,10 @@
         max-height: 200px !important;
         overflow: scroll !important;
     }
+    
+    #watchList .hasYouReplies {
+        color: var(--you-reply) !important;
+    }
 
     #threadWatcher>div {
         position: relative !important;
@@ -345,6 +353,11 @@
     #watchList li a:hover {
         color: #5f89ac !important;
     }
+    
+    #watchList .hasYouReplies:hover {
+        color: #a69800 !important;
+    }
+
 
     /* OP */
     .postContainer.opContainer {
@@ -390,7 +403,7 @@
     }
 
     .post.reply:has(.ql-tracked){
-        border: 2px dashed accentColor !important;
+        border: 2px dashed var(--you-reply) !important;
     }
 
     .post.reply {
