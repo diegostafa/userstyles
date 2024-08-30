@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        18
+@version        20
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -186,7 +186,7 @@
     }
 
     #searchform {
-        position: initial !important;
+        position: relative !important;
         margin: 0 !important;
         min-width: 0 !important;
         max-width: 100% !important;
@@ -195,6 +195,7 @@
         margin-right: 0 !important;
         padding-left: 40px !important;
         padding-top: 10px !important;
+        top: 0 !important;
     }
 
     #searchform {

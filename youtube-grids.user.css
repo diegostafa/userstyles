@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube-grids
 @namespace      github.com/diegostafa/userstyles
-@version        11
+@version        12
 @description    bigger grids in home, sub feed and search results
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -11,8 +11,7 @@
 @var            checkbox hidePlayerButtons "Hide player buttons you never click?" 0
 ==/UserStyle== */
 
-@-moz-document url("https://www.youtube.com/"), url("https://www.youtube.com/feed/subscriptions") {
-
+@-moz-document url("https://www.youtube.com/"), url("https://www.youtube.com/feed/subscriptions"), url-prefix("https://www.youtube.com/@") {
     .ytd-reel-shelf-renderer {
         display: none !important;
     }
@@ -49,6 +48,34 @@
         ytd-rich-grid-renderer {
             --ytd-rich-grid-items-per-row: 1 !important;
         }
+    }
+}
+
+@-moz-document url-prefix("https://www.youtube.com/@") {
+    #tabs,
+    #page-header-banner,
+    #page-header {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    ytd-two-column-browse-results-renderer.grid {
+        width: 100%!important;
+    }
+    ytd-two-column-browse-results-renderer ytd-rich-item-renderer {
+        margin: 4px !important;
+    }
+
+    ytd-item-section-renderer #left-arrow {
+        margin: 0 !important;
+        padding: 0 !important;
+        left: 20px !important;
+    }
+    ytd-item-section-renderer #right-arrow {
+        margin: 0 !important;
+        padding: 0 !important;
+        right: 20px !important;
     }
 }
 
@@ -185,12 +212,11 @@
     #video-title {
         overflow: initial !important;
         max-height: initial !important;
-        display: block !important;
+        display: flex !important;
     }
 }
 
 @-moz-document domain("youtube.com") {
-
     if hidePlayerButtons {
         .ytp-chrome-controls .ytp-size-button,
         .ytp-chrome-controls .ytp-miniplayer-button,
