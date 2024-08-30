@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        20
+@version        21
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -48,6 +48,8 @@
 
     hr,
     #tvcap,
+    [class="rfiSsc XtQzZd YNk70c"]:has(.TrmO7:empty),
+    #appbar:has(#slim_appbar:empty),
     #slim_appbar:empty,
     [class="WzNHm mWcf0e"]:has([class="VfL2Y LRZwuc"]),
     span.LAWljd,
@@ -133,8 +135,7 @@
     body,
     #rcnt,
     #main,
-    .LHJvCe,
-    #searchform *:not(span):not(a):not(div:has(>iframe)):not(div:has(>iframe) *) {
+    .LHJvCe {
         max-width: 100% !important;
         min-width: 0 !important;
         width: auto !important;
@@ -185,22 +186,24 @@
         padding: 0 !important;
     }
 
-    #searchform {
-        position: relative !important;
-        margin: 0 !important;
-        min-width: 0 !important;
+    #searchform *:not(span):not(a):not(div:has(>iframe)):not(div:has(>iframe) *) {
         max-width: 100% !important;
+        min-width: 0 !important;
         width: auto !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding-left: 40px !important;
-        padding-top: 10px !important;
-        top: 0 !important;
     }
 
     #searchform {
-        margin: 0 !important;
-        padding-bottom: 0 !important;
+        position: relative !important;
+        min-width: 0 !important;
+        max-width: 90% !important;
+        width: 100% !important;
+        margin: 0px !important;
+        padding: 0px !important;
+        padding-top: 10px !important;
+        padding-left: 60px !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        top: 0 !important;
     }
 
     #tsf + .Q3DXx,
@@ -238,6 +241,7 @@
 
     #searchform #tsf {
         flex: 1 !important;
+        width: 10000px !important;
         max-width: 50% !important;
     }
 
@@ -330,15 +334,27 @@
     }
 
     #rcnt {
+        display: flex !important;
+        flex-direction: row !important;
         justify-content: space-between !important;
-        flex-wrap: no-wrap !important;
+        flex-wrap: wrap !important;
     }
+
+    #rcnt > [class="SLPe5b"] {
+        width: 100% !important;
+        order: -2 !important;
+    }
+
+    #rcnt:has(#rhs) #center_col {
+        width: 62% !important;
+    }
+
 
     #rhs {
         min-width: 0 !important;
         max-width: 100% !important;
+        width: 35% !important;
         margin: 0 !important;
-        flex-grow: 1 !important;
         height: fit-content !important;
     }
 
@@ -575,6 +591,14 @@
 
         body {
             padding: 0 40px !important;
+        }
+
+        #rcnt {
+            flex-direction: column !important;
+        }
+
+        #center_col {
+            width: 100% !important;
         }
 
         #rhs {
