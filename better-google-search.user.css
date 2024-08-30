@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        21
+@version        22
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -336,8 +336,8 @@
     #rcnt {
         display: flex !important;
         flex-direction: row !important;
-        justify-content: space-between !important;
         flex-wrap: wrap !important;
+        grid-gap: 10px !important;
     }
 
     #rcnt > [class="SLPe5b"] {
@@ -345,16 +345,12 @@
         order: -2 !important;
     }
 
-    #rcnt:has(#rhs) #center_col {
-        width: 62% !important;
-    }
-
-
     #rhs {
         min-width: 0 !important;
         max-width: 100% !important;
         width: 35% !important;
         margin: 0 !important;
+        padding: 0 !important;
         height: fit-content !important;
     }
 
@@ -374,15 +370,14 @@
         position: relative !important;
     }
 
+    #center_col:has(+ #rhs) {
+        width: 64% !important;
+    }
+
     #center_col {
         padding: 0 !important;
         margin: 0 !important;
         max-width: 100% !important;
-        flex-grow: 1 !important;
-    }
-
-    #center_col:has(+ #rhs) {
-        margin-right: 10px !important;
     }
 
     [class="e8Ck0d CYJS5e"] {
@@ -587,6 +582,7 @@
     @media only screen and (max-width: 1200px) {
         #center_col:has(+ #rhs) {
             margin-right: 0 !important;
+            width: 100% !important;
         }
 
         body {
@@ -595,10 +591,6 @@
 
         #rcnt {
             flex-direction: column !important;
-        }
-
-        #center_col {
-            width: 100% !important;
         }
 
         #rhs {
