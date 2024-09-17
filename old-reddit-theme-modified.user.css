@@ -1,12 +1,13 @@
 /* ==UserStyle==
 @name           old-reddit-theme-modified
 @namespace      https://github.com/diegostafa/userstyles
-@version        10
+@version        12
 @description    a clean old.reddit theme
 @author         Diego <dstafa.dev@gmail.com> (https://github.com/diegostafa)
 @preprocessor   stylus
 @var            color borderColor "Border color" #80808050
-@var            checkbox hideUpvote "Hide upvote buttons" 0
+@var            checkbox hideScore "Hide score" 0
+@var            checkbox hideInteractions "Hide interactions (ability to like and comment)" 0
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.reddit.com/") {
@@ -36,8 +37,16 @@
         display: none !important;
     }
 
-    if hideUpvote {
+    if hideInteractions {
+        .login-required,
+        .commentarea > form.usertext,
         .midcol {
+            display: none !important;
+        }
+    }
+
+    if hideScore {
+        .tagline .score {
             display: none !important;
         }
     }
@@ -120,7 +129,7 @@
     .thing .thumbnail img {
         object-fit: contain !important;
     }
-    
+
     .thing .title {
         font-size: 1rem !important;
         display: block !important;
@@ -268,18 +277,18 @@
         padding-right: 0 !important;
         margin-right: 0 !Important;
     }
-    
+
     .comment .comment {
         margin-bottom: 0 !important;
         margin-top: 0 !important;
         border-bottom: none !important;
         border-right: none !important;
     }
-    
+
     .comment .comment:not(.collapsed) {
         padding-bottom: 0 !important;
     }
-        
+
     .commentarea > .sitetable > .comment:not(.collapsed) {
         padding-bottom: 0 !important;
         margin: 4px 0 !important;

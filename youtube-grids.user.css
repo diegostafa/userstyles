@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube-grids
 @namespace      github.com/diegostafa/userstyles
-@version        12
+@version        15
 @description    bigger grids in home, sub feed and search results
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -9,6 +9,7 @@
 @var            checkbox hideEmojiMessage "Hide messages containing emojis in livechat?" 0
 @var            checkbox betterLiveChat "Shorter livechat, less clutter?" 0
 @var            checkbox hidePlayerButtons "Hide player buttons you never click?" 0
+@var            checkbox hideInteractions "Hide interactions (ability to like and comment)" 0
 ==/UserStyle== */
 
 @-moz-document url("https://www.youtube.com/"), url("https://www.youtube.com/feed/subscriptions"), url-prefix("https://www.youtube.com/@") {
@@ -205,6 +206,7 @@
 }
 
 @-moz-document url("https://www.youtube.com/feed/subscriptions"), url("https://www.youtube.com/"), url-prefix("https://www.youtube.com/results") {
+    #menu.ytd-rich-grid-media,
     ytd-rich-section-renderer {
         display: none !important;
     }
@@ -213,6 +215,60 @@
         overflow: initial !important;
         max-height: initial !important;
         display: flex !important;
+    }
+
+    #meta.ytd-rich-grid-media {
+        padding: 0 !important;
+    }
+}
+
+@-moz-document url-prefix("https://www.youtube.com/watch") {
+    if hideInteractions {
+        #simple-box.ytd-comments-header-renderer,
+        segmented-like-dislike-button-view-model,
+        ytd-comment-engagement-bar {
+            display: none !important;
+        }
+
+        #ytd-menu-renderer * {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: fit-content !important;
+        }
+
+        #actions yt-button-view-model {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+    }
+
+    #owner {
+        min-width: initial !important;
+        max-width: 70% !important;
+    }
+
+    #actions {
+        min-width: initial !important;
+    }
+
+    ytd-comment-thread-renderer:has(ytd-comment-replies-renderer) {
+        margin-bottom: 0 !important;
+    }
+
+    yt-chip-cloud-chip-renderer {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    ytd-compact-video-renderer #video-title {
+        display: block !important;
+    }
+
+    #action-menu.ytd-comment-view-model,
+    ytd-compact-video-renderer ytd-menu-renderer,
+    #flexible-item-buttons:has(> ytd-download-button-renderer),
+    #sponsor-button {
+        display: none !important;
     }
 }
 
@@ -242,6 +298,7 @@
     }
 
     if betterLiveChat {
+        #panel-pages:has(yt-live-chat-restricted-participation-renderer),
         #reaction-control-panel-overlay,
         yt-live-chat-viewer-engagement-message-renderer,
         #author-photo {
