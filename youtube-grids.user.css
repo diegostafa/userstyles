@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube-grids
 @namespace      github.com/diegostafa/userstyles
-@version        15
+@version        17
 @description    bigger grids in home, sub feed and search results
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -251,7 +251,7 @@
         min-width: initial !important;
     }
 
-    ytd-comment-thread-renderer:has(ytd-comment-replies-renderer) {
+    ytd-comment-thread-renderer:not(:has(ytd-comment-replies-renderer[hidden])) {
         margin-bottom: 0 !important;
     }
 
@@ -308,6 +308,10 @@
         #chat {
             min-height: 0 !important;
         }
+    }
+
+    ytd-feed-nudge-renderer:has(#dismissible) {
+        display: none !important;
     }
 
     ytd-compact-video-renderer .details > div{
