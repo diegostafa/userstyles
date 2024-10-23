@@ -251,10 +251,6 @@
         min-width: initial !important;
     }
 
-    ytd-comment-thread-renderer:not(:has(ytd-comment-replies-renderer[hidden])) {
-        margin-bottom: 0 !important;
-    }
-
     yt-chip-cloud-chip-renderer {
         margin-top: 0 !important;
         margin-bottom: 0 !important;
