@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        24
+@version        25
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -11,6 +11,16 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.google.com/search") {
+
+    .e8Ck0d.CYJS5e.VrNAWb {
+        height: fit-content !important;
+        padding: 0 !important;
+    }
+
+    .e8Ck0d.CYJS5e.VrNAWb .e6hL7d {
+        grid-template-rows: initial !important;
+    }
+
 
     .crJ18e div {
         border-bottom: none !important;
