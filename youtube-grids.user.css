@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube-grids
 @namespace      github.com/diegostafa/userstyles
-@version        17
+@version        18
 @description    bigger grids in home, sub feed and search results
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -86,6 +86,8 @@
         min-width: 0 !important;
     }
 
+    yt-collections-stack > div > .collections-stack-wiz__collection-stack1,
+    yt-collections-stack > div > .collections-stack-wiz__collection-stack2,
     ytd-secondary-search-container-renderer,
     ytd-movie-renderer,
     ytd-menu-renderer,
