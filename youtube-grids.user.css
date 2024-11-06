@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube-grids
 @namespace      github.com/diegostafa/userstyles
-@version        18
+@version        19
 @description    bigger grids in home, sub feed and search results
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -93,6 +93,7 @@
     ytd-menu-renderer,
     ytd-playlist-renderer #list,
     ytd-playlist-renderer #view-more,
+    ytd-shelf-renderer,,
     ytd-shelf-renderer,
     ytd-reel-shelf-renderer,
     ytd-radio-renderer,
@@ -115,6 +116,16 @@
         max-width: 100% !important;
     }
 
+    yt-lockup-view-model > div > div{
+        min-width: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    yt-lockup-view-model > div {
+        margin-top: 0 !important;
+    }
+
     #primary {
         max-width: 100% !important;
     }
@@ -130,6 +141,7 @@
         justify-content: space-around !important;
     }
 
+    yt-lockup-view-model,
     ytd-channel-renderer,
     ytd-playlist-renderer,
     ytd-video-renderer {
@@ -138,6 +150,7 @@
         margin-top: 16px !important;
     }
 
+    yt-lockup-view-model > div
     ytd-channel-renderer #content-section,
     ytd-channel-renderer #info-section,
     ytd-playlist-renderer,
@@ -172,6 +185,7 @@
 
     @media only screen and (max-width: 1367px) {
 
+        yt-lockup-view-model,
         ytd-channel-renderer,
         ytd-playlist-renderer,
         ytd-video-renderer {
@@ -181,6 +195,7 @@
 
     @media only screen and (max-width: 1024px) {
 
+        yt-lockup-view-model,
         ytd-channel-renderer,
         ytd-playlist-renderer,
         ytd-video-renderer {
@@ -189,7 +204,7 @@
     }
 
     @media only screen and (max-width: 900px) {
-
+        yt-lockup-view-model,
         ytd-channel-renderer,
         ytd-playlist-renderer,
         ytd-video-renderer {
@@ -198,7 +213,7 @@
     }
 
     @media only screen and (max-width: 480px) {
-
+        yt-lockup-view-model,
         ytd-channel-renderer,
         ytd-playlist-renderer,
         ytd-video-renderer {
