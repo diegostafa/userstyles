@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube-grids
 @namespace      github.com/diegostafa/userstyles
-@version        19
+@version        20
 @description    bigger grids in home, sub feed and search results
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -175,6 +175,8 @@
         min-width: 100% !important;
     }
 
+
+    yt-lockup-view-model h3 > a,
     ytd-channel-renderer ytd-channel-name,
     #video-title {
         margin-top: 12px !important;

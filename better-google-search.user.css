@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        25
+@version        26
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -11,6 +11,10 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.google.com/search") {
+
+    .RNNXgb {
+        background-color: rgba(0, 0, 0, .05) !important;
+    }
 
     .e8Ck0d.CYJS5e.VrNAWb {
         height: fit-content !important;
@@ -60,6 +64,8 @@
         max-width: 100% !important;
     }
 
+    [class="ifWJbd FIfWIe z1asCe"],
+    .sbic:empty,
     hr,
     #tvcap,
     [class="rfiSsc XtQzZd YNk70c"]:has(.TrmO7:empty),
@@ -441,6 +447,7 @@
         margin: 10px auto !important;
     }
 
+    [class="cTjBsf"],
     #Odp5De,
     #tU52Vb > div > div,
     #kp-wp-tab-TvmWatch > div:not(:empty),
@@ -522,6 +529,7 @@
         display: block !important;
     }
 
+    [class="R0xfCb OuaH0"],
     .g table.jmjoTe tbody {
         display: flex !important;
         flex-wrap: wrap !important;
@@ -533,6 +541,7 @@
         width: 50% !important;
     }
 
+    [class="ZhosBf W59sce qPbbXd dctkEf"],
     .g table.jmjoTe tbody>tr>td {
         padding: 0 !important;
         margin: 0 !important;
@@ -595,6 +604,24 @@
     .g div[class="notranslate TbwUpd NJjxre iUh30 ojE3Fb"]>div>span {
         margin-right: 10px !important;
     }
+
+    [class="R0xfCb OuaH0"],
+    [class="TOQyFc U48fD"] {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    [class="B2VR9 CJHX3e"] {
+        padding: 0 !important;
+        padding-bottom: 5px !important;
+    }
+
+    [class="qR29te"] {
+        max-width: 50% !important;
+        width: 50% !important;
+    }
+
+
 
     @media only screen and (max-width: 1200px) {
         #center_col:has(+ #rhs) {
