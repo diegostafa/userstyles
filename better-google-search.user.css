@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        26
+@version        27
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -11,6 +11,11 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.google.com/search") {
+    .rfiSsc {
+        margin: 0 !important;
+        padding: 0 important;
+        display: block !important;
+    }
 
     .RNNXgb {
         background-color: rgba(0, 0, 0, .05) !important;
@@ -220,7 +225,7 @@
         margin: 0px !important;
         padding: 0px !important;
         padding-top: 10px !important;
-        padding-left: 40px !important;
+        padding-left: 65px !important;
         display: flex !important;
         justify-content: space-between !important;
         top: 0 !important;
@@ -389,19 +394,6 @@
     #hdtbMenus {
         position: relative !important;
     }
-
-    #center_col {
-        padding: 0 !important;
-        margin: 0 !important;
-        max-width: 100% !important;
-        width: 100% !important;
-    }
-
-    #center_col:has(+ #rhs) {
-        width: 64% !important;
-    }
-
-
 
     [class="e8Ck0d CYJS5e"] {
         margin: 10px auto !important;
@@ -622,6 +614,35 @@
     }
 
 
+    #center_col {
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    #w7tRq{
+        display: flex !important;
+        margin: 0 !important;
+
+    }
+
+    #center_col:has(+ #rhs) {
+        width: 64% !important;
+    }
+
+    [class="bzXtMb M8OgIe"], [class="bzXtMb M8OgIe"] div{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #Odp5De > div, #Odp5De > div > div{
+        display: flex !important;
+    }
+
+    #Odp5De .YNk70c div, .UFQ0Gb {
+        width: 100% !important;
+    }
 
     @media only screen and (max-width: 1200px) {
         #center_col:has(+ #rhs) {
@@ -636,6 +657,10 @@
         #rcnt {
             flex-direction: column !important;
         }
+        #w7tRq{
+            flex-direction: column !important;
+        }
+
 
         #rhs {
             order: -100 !important;
