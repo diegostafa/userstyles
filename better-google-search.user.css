@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        27
+@version        28
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -18,7 +18,7 @@
     }
 
     .RNNXgb {
-        background-color: rgba(0, 0, 0, .05) !important;
+        background-color: rgba(128, 128, 128 .1) !important;
     }
 
     .e8Ck0d.CYJS5e.VrNAWb {
@@ -294,6 +294,10 @@
 
     .logo {
         top: -5px !important;
+    }
+
+    .rh1rhd {
+        margin-left: 0 !important;
     }
 
     .RNNXgb,
@@ -644,6 +648,10 @@
         width: 100% !important;
     }
 
+    .usJj9c {
+        min-width: auto !important;
+    }
+
     @media only screen and (max-width: 1200px) {
         #center_col:has(+ #rhs) {
             margin-right: 0 !important;
@@ -661,25 +669,23 @@
             flex-direction: column !important;
         }
 
-
         #rhs {
             order: -100 !important;
             width: 100% !important;
             margin: 0 !important;
             padding: 0 !important;
-            display: grid !important;
-            grid-gap: 0 5px !important;
-            grid-template-columns: auto auto auto !important;
+        }
+
+        [class="kp-wholepage ss6qqb u7yw9 zLsiYe mnr-c kp-wholepage-osrp Jb0Zif EyBRub"],
+        #uOz6nd.A6K0A.z4oRIf {
+            margin: 0 !important;
+            width: 100% !important;
         }
 
         #rhs>div {
             width: auto !important;
             padding: 0px !important;
             margin: 0 !important;
-        }
-
-        #rhs * {
-            font-size: 0.8rem !important;
         }
 
         .g .P1usbc>div {
