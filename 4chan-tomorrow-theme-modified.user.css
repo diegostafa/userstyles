@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           4chan-tomorrow-theme-modified
 @namespace      github.com/diegostafa/userstyles
-@version        12
+@version        13
 @description    a clean tomorrow theme
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -172,7 +172,6 @@
     hr,
     #absbot,
     .navLinks.navLinksBot.desktop .thread-stats,
-    .ctrl-wrap,
     .postInfo.desktop input[type=checkbox],
     .adc-resp-bg,
     .navLinks.navLinksBottom.mobilebtn,
@@ -332,7 +331,7 @@
         max-height: 200px !important;
         overflow: scroll !important;
     }
-    
+
     #watchList .hasYouReplies {
         color: var(--you-reply) !important;
     }
@@ -353,7 +352,7 @@
     #watchList li a:hover {
         color: #5f89ac !important;
     }
-    
+
     #watchList .hasYouReplies:hover {
         color: #a69800 !important;
     }
