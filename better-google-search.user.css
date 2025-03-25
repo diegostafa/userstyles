@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        29
+@version        30
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -11,6 +11,20 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.google.com/search") {
+
+    .rfiSsc:not(:has(.TrmO7:empty)) {
+        height: 30px !important;
+    }
+
+    .AO0e0:hover {
+        background-color:transparent !important;
+    }
+
+    .AO0e0 {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
     .rfiSsc {
         margin: 0 !important;
         padding: 0 important;
@@ -69,6 +83,7 @@
         max-width: 100% !important;
     }
 
+    .om4jw.iRPzcb
     [class="ifWJbd FIfWIe z1asCe"],
     .sbic:empty,
     hr,
@@ -108,8 +123,8 @@
     [class="ClPXac hoUro Pqkn2e"],
     .oBa0Fe,
     [class="Lu1KO aBOYt"] span,
-    .g div[aria-label="About this result"],
-    .g table.jmjoTe tr:has(form),
+    div[aria-label="About this result"],
+    table.jmjoTe tr:has(form),
     .kno-ftr,
     .KFFQ0c.xKf9F {
         if debug {
@@ -459,9 +474,9 @@
     #rso:not(:has(#kp-wp-tab-overview))>div>div:not(:empty),
     #rso:not(:has(#kp-wp-tab-overview))>.hlcw0c>div:not(:empty),
     #rso #kp-wp-tab-overview>div:not(:empty),
-    .g .P1usbc,
-    .g .HiHjCd,
-    .g table.jmjoTe {
+    .P1usbc,
+    .HiHjCd,
+    table.jmjoTe {
         border: 1px solid #80808036 !important;
         margin: 10px 0 !important;
         padding: 10px !important;
@@ -510,62 +525,90 @@
         justify-content: space-around !important;
     }
 
-    .g .HiHjCd {
+    .HiHjCd {
         width: fit-content !important;
         margin: 0 !important;
         margin-top: 10px !important;
     }
 
-    .g table.jmjoTe h3 a {
+    .jmjoTe {
+        padding-left: 0 !important;
+        margin: 0 !important;
+    }
+
+    [class="wHYlTd Ww4FFb vt6azd tF2Cxc asEBEc"],
+    .A6K0A > div,
+    .MjjYud > div {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    table.jmjoTe h3 a {
         font-size: 0.9rem !important;
     }
 
-    .g table.jmjoTe {
+    table.jmjoTe {
         margin: 0 !important;
         display: block !important;
     }
 
     [class="R0xfCb OuaH0"],
-    .g table.jmjoTe tbody {
+    table.jmjoTe tbody {
         display: flex !important;
         flex-wrap: wrap !important;
     }
 
-    .g table.jmjoTe tbody>tr {
+    .BYM4Nd.AO0e0 {
+        width: 100% !important;
+    }
+
+    table.jmjoTe tbody tr {
         padding: 0 !important;
         margin: 0 !important;
         width: 50% !important;
+        display: block !important;
+    }
+
+    tr .DYjfCf {
+        display: none !important;
+    }
+    tr .VttTV {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    tr:hover {
+        background-color: transparent !important;
     }
 
     [class="ZhosBf W59sce qPbbXd dctkEf"],
-    .g table.jmjoTe tbody>tr>td {
+    table.jmjoTe tbody>tr>td {
         padding: 0 !important;
         margin: 0 !important;
         font-size: 0.8rem !important;
     }
 
-    .g table.jmjoTe tbody>tr div,
-    .g table.jmjoTe tbody>tr td {
+    table.jmjoTe tbody>tr div,
+    table.jmjoTe tbody>tr td {
         display: block !important;
         max-width: 100% !important;
     }
 
-    .g .P1usbc {
+    .P1usbc {
         margin-bottom: 0 !important;
         display: grid !important;
         grid-template-columns: 50% 50% !important;
     }
 
-    .g .P1usbc>div {
+    .P1usbc>div {
         margin-bottom: 4px !important;
     }
 
-    .g h3.LC20lb.MBeuO.DKV0Md {
+    h3.LC20lb.MBeuO.DKV0Md {
         font-size: 1.1rem !important;
         margin-top: 5px !important;
     }
 
-    #center_col .g .H9lube {
+    #center_col .H9lube {
         width: 18px !important;
         height: 18px !important;
         background-color: transparent;
@@ -593,11 +636,11 @@
         margin-right: 20px !important;
     }
 
-    .g div[class="notranslate TbwUpd NJjxre iUh30 ojE3Fb"]>div {
+    div[class="notranslate TbwUpd NJjxre iUh30 ojE3Fb"]>div {
         display: flex !important;
     }
 
-    .g div[class="notranslate TbwUpd NJjxre iUh30 ojE3Fb"]>div>span {
+    div[class="notranslate TbwUpd NJjxre iUh30 ojE3Fb"]>div>span {
         margin-right: 10px !important;
     }
 
@@ -688,12 +731,12 @@
             margin: 0 !important;
         }
 
-        .g .P1usbc>div {
+        .P1usbc>div {
             display: flex !important;
             flex-wrap: wrap !important;
         }
 
-        .g .P1usbc .VNLkW .G1Rrjc {
+        .P1usbc .VNLkW .G1Rrjc {
             padding-left: 5px !important;
             padding-right: 20px !important;
         }
@@ -708,12 +751,12 @@
             grid-template-columns: auto auto !important;
         }
 
-        .g .P1usbc>div {
+        .P1usbc>div {
             display: flex !important;
             flex-wrap: wrap !important;
         }
 
-        .g .P1usbc .VNLkW .i4vd5e {
+        .P1usbc .VNLkW .i4vd5e {
             width: 100% !important;
         }
     }
