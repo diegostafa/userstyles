@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        30
+@version        31
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -83,7 +83,11 @@
         max-width: 100% !important;
     }
 
-    .om4jw.iRPzcb
+    #folsrch-sqf-1,
+    .omFXYd,
+    [class="RDmXvc Jzkafd LrrQLb"],
+    [class="zp6Lyf FpfXM"],
+    .om4jw.iRPzcb,
     [class="ifWJbd FIfWIe z1asCe"],
     .sbic:empty,
     hr,
@@ -466,7 +470,7 @@
     block-component > * > [class="dG2XIf Wnoohf OJXvsb"],
     #rcnt>.XqFnDf,
     #botstuff .mnr-c,
-    #rcnt>.M8OgIe:not(:has(h1[class="bNg8Rb OhScic zsYMMe BBwThe"])),
+    #rcnt>.M8OgIe:not(:has(#eKIzJc)):not(:has(h1[class="bNg8Rb OhScic zsYMMe BBwThe"])),
     [class="WvKfwe a3spGf"]>div:not(:empty),
     #rhs>div:not(:empty),
     #bres:not(:empty),
@@ -487,6 +491,15 @@
     [class="GhpATe pttBJc"] [class="TzHB6b cLjAic"] {
         padding: 0 !important;
         margin: 0 !important;
+    }
+
+    [class="OZ9ddf GkDqAd WAUd4 RK5Kkf"] {
+        padding: 0 !important;
+        padding-bottom: 10px !important;
+    }
+
+    [class="Pqkn2e rNSxBe"] {
+        padding: 0 !important;
     }
 
     .g {
