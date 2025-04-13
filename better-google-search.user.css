@@ -1,16 +1,24 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        34
+@version        35
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
 @var            text borderRadius "border radius?" "10px"
 @var            color accentColor "accent color" #ffffff06
 @var            checkbox debug "[DEBUG] show hidden elements" 0
+@var            checkbox descriptionOnRight "Show the description of a link on the right?" 0
 ==/UserStyle== */
 
 @-moz-document regexp("https?:\/\/www\.google\.(?:[a-z]{2,3}(?:\.[a-z]{2})?)\/search(?:\?.*)?") {
+
+    if descriptionOnRight {
+        [class="N54PNb BToiNc"]:not(:has([class="kb0PBd"])):not(:has(table)) {
+            display: flex !important;
+            flex-direction: row !important;
+        }
+    }
 
     .rfiSsc:not(:has(.TrmO7:empty)) {
         height: 30px !important;
