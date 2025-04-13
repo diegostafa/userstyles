@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        32
+@version        33
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -499,6 +499,14 @@
         padding: 10px !important;
         background-color: accentColor !important;
         border-radius: borderRadius !important;
+    }
+
+    .srKDX {
+        grid-template-columns: initial !important;
+    }
+
+    [class="wHYlTd Ww4FFb vt6azd tF2Cxc asEBEc"] {
+        max-width: initial!important;
     }
 
     [class="GhpATe pttBJc"] [class="TzHB6b cLjAic"] {
