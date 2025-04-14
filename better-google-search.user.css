@@ -18,19 +18,6 @@
             display: flex !important;
             flex-direction: row !important;
         }
-
-        .A9Y9g {
-            flex: initial !important;
-        }
-
-        [class="kb0PBd A9Y9g"] {
-            border: 1px solid #80808036 !important;
-            margin-left: 10px !Important;
-            padding: 10px !important;
-            background-color: accentColor !important;
-            border-radius: borderRadius !important;
-        }
-
     }
 
     .rfiSsc:not(:has(.TrmO7:empty)) {
