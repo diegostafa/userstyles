@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube-grids
 @namespace      github.com/diegostafa/userstyles
-@version        22
+@version        23
 @description    bigger grids in home, sub feed and search results
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -12,43 +12,18 @@
 @var            checkbox hideInteractions "Hide interactions (ability to like and comment)" 0
 ==/UserStyle== */
 
-@-moz-document url("https://www.youtube.com/"), url("https://www.youtube.com/feed/subscriptions"), url-prefix("https://www.youtube.com/@") {
-    .ytd-reel-shelf-renderer {
-        display: none !important;
-    }
 
-    ytd-rich-grid-renderer {
-        margin: 8px;
-        --ytd-rich-grid-items-per-row: 5 !important;
-    }
+@-moz-document url("https://www.youtube.com/"), regexp("^https:\\/\\/www\\.youtube\\.com\\/(?!.*\\/featured$).+\\/.+$") {
+     #contents {
+        display: grid !important;
+        gap: 1rem !important;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 
-    #contents>ytd-rich-grid-row,
-    #contents>ytd-rich-grid-row>#contents {
-        display: contents;
     }
-
-    @media only screen and (max-width: 1367px) {
-        ytd-rich-grid-renderer {
-            --ytd-rich-grid-items-per-row: 4 !important;
-        }
-    }
-
-    @media only screen and (max-width: 1024px) {
-        ytd-rich-grid-renderer {
-            --ytd-rich-grid-items-per-row: 3 !important;
-        }
-    }
-
-    @media only screen and (max-width: 768px) {
-        ytd-rich-grid-renderer {
-            --ytd-rich-grid-items-per-row: 2 !important;
-        }
-    }
-
-    @media only screen and (max-width: 480px) {
-        ytd-rich-grid-renderer {
-            --ytd-rich-grid-items-per-row: 1 !important;
-        }
+    ytd-rich-item-renderer {
+        width: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 }
 
@@ -119,7 +94,7 @@
     yt-lockup-view-model > div > div{
         min-width: 0 !important;
         width: 100% !important;
-        max-width: 100% !important;
+        max-width: 101% !important;
     }
 
     yt-lockup-view-model > div {
@@ -166,7 +141,7 @@
     }
 
     ytd-channel-renderer #avatar-section {
-        min-width: 100% !important;
+        min-width: 101% !important;
     }
 
     ytd-channel-name ytd-badge-supported-renderer {
@@ -174,7 +149,7 @@
     }
 
     #dismissible .text-wrapper {
-        max-width: 100% !important;
+        max-width: 101% !important;
     }
 
     .title-and-badge {
@@ -185,7 +160,7 @@
     yt-lockup-view-model h3 > a,
     ytd-channel-renderer ytd-channel-name,
     #video-title {
-        margin-top: 12px !important;
+        margin-top: 13px !important;
         font-size: 1.5rem !important;
         font-weight: 500 !important;
         line-height: 2rem !important;
@@ -225,7 +200,7 @@
         ytd-channel-renderer,
         ytd-playlist-renderer,
         ytd-video-renderer {
-            width: 100% !important;
+            width: 101% !important;
         }
     }
 }
@@ -331,8 +306,12 @@
         }
 
         #chat {
-            min-height: 0 !important;
+            min-height: 1 !important;
         }
+    }
+
+    .ytd-reel-shelf-renderer {
+        display: none !important;
     }
 
     ytd-feed-nudge-renderer:has(#dismissible) {
