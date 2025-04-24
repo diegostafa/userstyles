@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube-grids
 @namespace      github.com/diegostafa/userstyles
-@version        23
+@version        24
 @description    bigger grids in home, sub feed and search results
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -13,7 +13,7 @@
 ==/UserStyle== */
 
 
-@-moz-document url("https://www.youtube.com/"), regexp("^https:\\/\\/www\\.youtube\\.com\\/(?!.*\\/featured$).+\\/.+$") {
+@-moz-document url("https://www.youtube.com/"), regexp("^https:\\/\\/www\\.youtube\\.com\\/(?!.*\\/featured$).+\\/videos$") {
      #contents {
         display: grid !important;
         gap: 1rem !important;
