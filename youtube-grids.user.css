@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube-grids
 @namespace      github.com/diegostafa/userstyles
-@version        24
+@version        25
 @description    bigger grids in home, sub feed and search results
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -12,8 +12,7 @@
 @var            checkbox hideInteractions "Hide interactions (ability to like and comment)" 0
 ==/UserStyle== */
 
-
-@-moz-document url("https://www.youtube.com/"), regexp("^https:\\/\\/www\\.youtube\\.com\\/(?!.*\\/featured$).+\\/videos$") {
+@-moz-document url("https://www.youtube.com/") {
      #contents {
         display: grid !important;
         gap: 1rem !important;
