@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        36
+@version        37
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -18,6 +18,10 @@
             display: flex !important;
             flex-direction: row !important;
         }
+    }
+
+    .UxeQfc {
+        display: block !important;
     }
 
     .rfiSsc:not(:has(.TrmO7:empty)) {
