@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        37
+@version        38
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -263,6 +263,7 @@
         top: 0 !important;
     }
 
+
     #tsf + .Q3DXx,
     #tsf + .Q3DXx * {
         padding-top: 0 !important;
@@ -276,6 +277,10 @@
         max-height: 32px !important;
     }
 
+    [class="Xx7Mif E5eFb CTOaxb"] {
+        z-index: initial !important;
+        position: initial !important;
+    }
 
     .a4bIc textarea {
         padding: 0 !important;
