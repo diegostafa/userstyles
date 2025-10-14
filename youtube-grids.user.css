@@ -278,6 +278,7 @@
 }
 
 @-moz-document domain("youtube.com") {
+    ytSearchboxComponentReportButton,
     ytd-rich-section-renderer:has(.grid-subheader) {
         display: none !important;
     }
