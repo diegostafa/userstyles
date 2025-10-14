@@ -1,28 +1,19 @@
 /* ==UserStyle==
 @name           youtube-grids
 @namespace      github.com/diegostafa/userstyles
-@version        28
+@version        29
 @description    bigger grids in home, sub feed and search results
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
 @var            checkbox hideGarbage "Hide shorts?" 1
 @var            checkbox hideEmojiMessage "Hide messages containing emojis in livechat?" 0
 @var            checkbox betterLiveChat "Shorter livechat, less clutter?" 0
-@var            checkbox hidePlayerButtons "Hide player buttons you never click?" 0
+@var            checkbox hidePlayerButtons "Hide player buttons you never click?" 1
 @var            checkbox hideInteractions "Hide interactions (ability to like and comment)" 0
+@var            checkbox hideMenus "Hide contextual menus (watch later, share, add to queue...)" 1
 ==/UserStyle== */
 
 @-moz-document url("https://www.youtube.com/"), url("https://www.youtube.com/feed/subscriptions"), url-prefix("https://www.youtube.com/@") {
-    .yt-lockup-metadata-view-model__menu-button,
-    .ytd-reel-shelf-renderer {
-        display: none !important;
-    }
-
-    .yt-lockup-metadata-view-model__title {
-        padding: 0 !important;
-        display: initial !important;
-    }
-
     ytd-rich-grid-renderer {
         margin: 8px;
         --ytd-rich-grid-items-per-row: 5 !important;
@@ -236,23 +227,6 @@
     }
 }
 
-@-moz-document url("https://www.youtube.com/feed/subscriptions"), url("https://www.youtube.com/"), url-prefix("https://www.youtube.com/results") {
-    #menu.ytd-rich-grid-media,
-    ytd-rich-section-renderer {
-        display: none !important;
-    }
-
-    #video-title {
-        overflow: initial !important;
-        max-height: initial !important;
-        display: flex !important;
-    }
-
-    #meta.ytd-rich-grid-media {
-        padding: 0 !important;
-    }
-}
-
 @-moz-document url-prefix("https://www.youtube.com/watch") {
     if hideInteractions {
         #simple-box.ytd-comments-header-renderer,
@@ -304,6 +278,10 @@
 }
 
 @-moz-document domain("youtube.com") {
+    ytd-rich-section-renderer:has(.grid-subheader) {
+        display: none !important;
+    }
+
     if hidePlayerButtons {
         .ytp-chrome-controls .ytp-size-button,
         .ytp-chrome-controls .ytp-miniplayer-button,
@@ -314,6 +292,7 @@
     }
 
     if hideGarbage {
+        ytd-rich-section-renderer:has([is-shorts])
         ytd-video-renderer:has([aria-label="Shorts"]),
         ytd-mini-guide-entry-renderer[aria-label="Shorts"],
         ytd-guide-entry-renderer #endpoint[title="Shorts"],
@@ -339,6 +318,32 @@
         #chat {
             min-height: 0 !important;
         }
+    }
+
+    if hideMenus {
+         #menu.ytd-rich-grid-media,
+        ytd-rich-section-renderer,
+        #details > #menu,
+        .yt-lockup-metadata-view-model__menu-button,
+        .ytd-reel-shelf-renderer {
+            display: none !important;
+        }
+
+        #details > #text-metadata > #meta,
+        .yt-lockup-metadata-view-model__title,
+        #meta.ytd-rich-grid-media {
+            padding: 0 !important;
+        }
+    }
+
+    #video-title {
+        overflow: initial !important;
+        max-height: initial !important;
+        display: flex !important;
+    }
+    #details > #text-metadata > #meta,
+    .yt-lockup-metadata-view-model__title {
+        display: flex !important;
     }
 
     ytd-feed-nudge-renderer:has(#dismissible) {
