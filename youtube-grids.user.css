@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube-grids
 @namespace      github.com/diegostafa/userstyles
-@version        27
+@version        28
 @description    bigger grids in home, sub feed and search results
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -13,8 +13,14 @@
 ==/UserStyle== */
 
 @-moz-document url("https://www.youtube.com/"), url("https://www.youtube.com/feed/subscriptions"), url-prefix("https://www.youtube.com/@") {
+    .yt-lockup-metadata-view-model__menu-button,
     .ytd-reel-shelf-renderer {
         display: none !important;
+    }
+
+    .yt-lockup-metadata-view-model__title {
+        padding: 0 !important;
+        display: initial !important;
     }
 
     ytd-rich-grid-renderer {
@@ -94,7 +100,6 @@
     ytd-menu-renderer,
     ytd-playlist-renderer #list,
     ytd-playlist-renderer #view-more,
-    ytd-shelf-renderer,,
     ytd-shelf-renderer,
     ytd-reel-shelf-renderer,
     ytd-radio-renderer,
@@ -308,7 +313,7 @@
         }
     }
 
-    if hideShorts {
+    if hideGarbage {
         ytd-video-renderer:has([aria-label="Shorts"]),
         ytd-mini-guide-entry-renderer[aria-label="Shorts"],
         ytd-guide-entry-renderer #endpoint[title="Shorts"],
