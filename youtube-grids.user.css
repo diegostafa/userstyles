@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube-grids
 @namespace      github.com/diegostafa/userstyles
-@version        29
+@version        31
 @description    bigger grids in home, sub feed and search results
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -337,14 +337,15 @@
         }
     }
 
+    a.yt-lockup-metadata-view-model__title,
     #video-title {
         overflow: initial !important;
         max-height: initial !important;
         display: flex !important;
     }
     #details > #text-metadata > #meta,
-    .yt-lockup-metadata-view-model__title {
-        display: flex !important;
+    a.yt-lockup-metadata-view-model__title {
+        display: block !important;
     }
 
     ytd-feed-nudge-renderer:has(#dismissible) {
