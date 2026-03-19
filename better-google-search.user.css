@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        38
+@version        39
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -369,7 +369,6 @@
         height: fir-content !important;
         max-height: fir-content !important;
         margin-top: 15px !important;
-
     }
 
     .OMqmfd{
@@ -711,7 +710,6 @@
         width: 50% !important;
     }
 
-
     #center_col {
         padding: 0 !important;
         margin: 0 !important;
@@ -737,8 +735,42 @@
         display: flex !important;
     }
 
-    #Odp5De .YNk70c div, .UFQ0Gb {
-        width: auto !important;
+    [class="ofHStc Dn7Fzd"] {
+        padding: 0 !important;
+    }
+    [class="ofHStc Dn7Fzd"] .jKhXsc {
+        position: initial !important;
+    }
+
+    [class="lACQkd"] {
+        bottom: 0px !important;
+        padding-top: 10px !important;
+    }
+
+    [class="lACQkd"] > .zNsLfb {
+        height: initial !important;
+        padding: 0 !important;
+        border-radius: borderRadius !important;
+    }
+
+    [class="in7vHe oQOpie btku5b NQYJvc FR7ZSc sjVJQd"] {
+        max-width: initial !important;
+        border-radius: borderRadius !important;
+    }
+
+    [class="niO4u VDgVie SlP8xc"]:hover {
+        border-radius: borderRadius !important;
+    }
+
+    [class="YzCcne"] {
+        margin: 0 !important;
+    }
+
+
+    [class="YNk70c EjQTId"] > div,
+    [class="YNk70c EjQTId"] > div > div
+    {
+        width: 100% !important;
     }
 
     .usJj9c {
