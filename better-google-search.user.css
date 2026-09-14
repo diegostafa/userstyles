@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           better-google-search
 @namespace      github.com/diegostafa/userstyles
-@version        41
+@version        42
 @description    improved google search ui
 @author         Diego <dstafa.dev@gmail.com> (github.com/diegostafa)
 @preprocessor   stylus
@@ -774,6 +774,10 @@
 
     .usJj9c {
         min-width: auto !important;
+    }
+
+    .NdPIL {
+        padding: 0 !important;
     }
 
     @media only screen and (max-width: 1200px) {
